@@ -1,0 +1,24 @@
+@import "app/assets/scss/_variables.scss";
+
+.mztRowWaveform {
+  margin-top: 3%;
+  margin-bottom: 2%;
+}
+
+/* wavesurfer.js */
+.wavesurfer-handle.wavesurfer-handle-start,
+.wavesurfer-handle.wavesurfer-handle-end {
+  background-color: $DarkWaveform !important; /* invisible */
+  max-width: 8px !important;
+  min-width: 8px !important;
+  width: 3% !important;
+}
+
+.wavesurfer-region {
+  background-color: $ColorWaveformRegion;
+  background-image: linear-gradient(19deg, #21d4fd40 0%, #b721ff63 100%);
+}
+
+canvas {
+  z-index: unset !important;
+}

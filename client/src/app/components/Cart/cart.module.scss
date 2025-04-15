@@ -1,0 +1,62 @@
+@import 'app/assets/scss/_variables.scss';
+
+.container {
+  padding: 5px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+}
+
+.headerCart {
+  height: 50px;
+  cursor: pointer;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  font-weight: 600;
+  display: flex;
+}
+.summary{
+  padding: 10px;
+}
+.content{
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  gap: 10px;
+}
+.total{
+  text-align: end;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  .totalPay{
+    border-top: 2px solid #000;
+    padding-top: 10px;
+    font-weight: 800;
+  }
+}
+.card{
+  color: #fff;
+  background-color: #008820;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  display: flex;
+}
+.itemCart{
+  border-bottom: 1px solid#ebebeb;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 700;
+  gap: 5px;
+}

@@ -1,0 +1,50 @@
+.banner-container {
+  opacity: 1;
+  filter: invert(1);
+  width: 100%;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .banner-container {
+    background-image: none;
+  }
+}
+
+.list-labels {
+  // grid-column-gap: 5px;
+  // grid-row-gap: 5px;
+  // filter: invert(1);
+  // justify-content: flex-start;
+  // align-items: center;
+  // width: 100%;
+  // height: 100%;
+  // display: flex;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .list-labels {
+    width: 85%;
+  }
+}
+
+.label-item {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.label-item:hover {
+  opacity: 1;
+  box-shadow: 0 2px 14px 5px rgba(0, 0, 0, 0.52);
+}
+
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+.slick-dots {
+  bottom: -20px;
+}

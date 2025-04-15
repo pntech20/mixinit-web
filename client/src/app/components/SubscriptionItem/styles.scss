@@ -1,0 +1,150 @@
+.subItem {
+  border: 1px solid #e7e7e7;
+  border-radius: 16px;
+  flex-flow: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  transition: all 0.2s;
+}
+
+.subItem:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-height:767px) {
+  .subItem:hover {
+    transform: none;
+  }
+}
+
+
+.sub-header {
+  color: #fff;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background-color: #000;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.sub-price {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.main-price {
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+.divider-subs {
+  background-color: #b6b9ce;
+  width: 1px;
+  height: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.recurringDays {
+  letter-spacing: -0.02em;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.des-subs {
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.btn-subscribe {
+  width: 100%;
+  background-color: #000 !important;
+  color: #fff !important;
+  border-radius: 50px !important;
+  text-align: center;
+  letter-spacing: -0.02em;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  min-height: 48px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 12px 32px;
+  font-size: 14px !important;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  display: flex;
+}
+
+.btn-subscribe:hover {
+  background-color: #282556 !important;
+}
+
+.des-download {
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  border-top: 1px solid #e4e6f1;
+  border-bottom: 1px solid #e4e6f1;
+}
+
+.list-labels-sub {
+  grid-column-gap: 24px;
+  grid-row-gap: 16px;
+  grid-template-columns: 1fr;
+}
+
+.list-labels-sub-item {
+  grid-column-gap: 12px;
+  align-items: center;
+  display: flex;
+}
+
+.item-label-text {
+  text-align: center;
+  letter-spacing: -0.01em;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.listLabels {
+  padding-left: 0;
+  list-style: none;
+  align-self: stretch;
+  margin-bottom: 10px;
+}
+
+.labelItem {
+  margin-bottom: 20px;
+}
+
+.labelItemText {
+  background-image: url('../../assets/svgs/tick-list.svg');
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: auto;
+  align-self: stretch;
+  margin-top: 16px;
+  padding-left: 32px;
+  font-size: 14px;
+  line-height: 24px;
+}

@@ -1,0 +1,21 @@
+@import '../../assets/scss/variables';
+
+.addIconButton {
+  margin: 0 6px;
+  cursor: pointer;
+}
+
+.addIconPlayMobile {
+  color: $White;
+  font-size: $FontSize12;
+}
+
+.addButton {
+  background-color: $GrayLightest;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,45 @@
+{{#if wantMemo}}
+import { memo } from 'react';
+{{/if}}
+{{#if wantTranslations}}
+import { useTranslation } from 'react-i18next';
+import { messages } from './messages';
+{{/if}}
+
+interface Props {}
+
+{{#if wantMemo}}
+export const {{ properCase componentName }} = memo((props: Props) => {
+{{else}}
+export function {{ properCase componentName }}(props: Props) {
+{{/if}}
+  {{#if wantTranslations}}
+  const { t, i18n } = useTranslation();
+  {{/if}}
+
+  return (
+  {{#if wantStyledComponents}}
+  <Div>
+  {{else}}
+  <div>
+  {{/if}}
+    {{#if wantTranslations}}
+    {t('')}
+    {/*  {t(...messages.someThing())}  */}
+    {{/if}}
+  {{#if wantStyledComponents}}
+  </Div>
+  {{else}}
+  </div>
+  {{/if}}
+  );
+
+{{#if wantMemo}}
+});
+{{else}}
+};
+{{/if}}
+
+{{#if wantStyledComponents}}
+const Div = styled.div``;
+{{/if}}

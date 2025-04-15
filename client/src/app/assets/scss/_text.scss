@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'OpenSans Light';
+  src: url('../fonts/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Regular';
+  src: url('../fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Semibold';
+  src: url('../fonts/OpenSans-Semibold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans Bold';
+  src: url('../fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'LuckiestGuy Regular';
+  src: url('../fonts/LuckiestGuy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Impact';
+  src: url('../fonts/Impact.ttf');
+}
+
+@font-face {
+  font-family: 'RubikDoodleShadow';
+  src: url('../fonts/RubikDoodleShadow-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Rubik80sFade';
+  src: url('../fonts/Rubik80sFade-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'ArchivoBlack';
+  src: url('../fonts/ArchivoBlack-Regular.ttf');
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+label,
+// strong,
+b,
+a {
+  font-family: 'OpenSans', sans-serif;
+}
+
+.ql-editor {
+  .ql-font-serif {
+    font-family: serif;
+  }
+  .ql-font-monospace {
+    font-family: monospace;
+  }
+
+  .ql-size-small {
+    font-size: 12px;
+  }
+  .ql-size-large {
+    font-size: 36px;
+  }
+  .ql-size-huge {
+    font-size: 48px;
+  }
+
+  .ql-color-picker .ql-picker-item[data-value='#f00'] {
+    background-color: #f00;
+  }
+
+  .ql-align-center {
+    text-align: center;
+  }
+  .ql-align-right {
+    text-align: right;
+  }
+  .ql-align-justify {
+    text-align: justify;
+  }
+
+  .ql-list {
+    margin-left: 20px;
+  }
+  .ql-list.ql-indent-1 {
+    margin-left: 40px;
+  }
+  .ql-list.ql-indent-2 {
+    margin-left: 60px;
+  }
+
+  .ql-toolbar {
+    background-color: #f0f0f0;
+  }
+
+  blockquote {
+    border-left: 4px solid #ccc;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 16px;
+    color: #666;
+  }
+
+  pre {
+    background-color: #23241f;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 5px 0;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: hidden;
+  }
+
+  li {
+    margin-left: 20px;
+  }
+
+  code {
+    background-color: #f3f3f3;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 85%;
+    color: #e83e8c;
+  }
+}
+
+.text-transform-normal {
+  text-transform: none;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+.text-underline {
+  text-decoration: underline;
+}

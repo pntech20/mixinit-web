@@ -1,0 +1,26 @@
+@import 'app/assets/scss/variables';
+
+.sampleItem {
+  padding: 3px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.textItem {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 15px;
+  color: $MainDark;
+  margin-left: 5px;
+}
+
+.textItem:hover {
+  text-decoration: underline;
+}
+
+.image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}

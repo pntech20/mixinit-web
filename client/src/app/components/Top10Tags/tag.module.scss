@@ -1,0 +1,19 @@
+@import "app/assets/scss/variables";
+
+.selectedTimelight {
+    background-color: $MainDark;
+    color: $MainWhite;
+}
+
+.selectedTimedark {
+    background-color: $MainWhite;
+    color: $MainDark;
+}
+
+.btnView {
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 16px;
+    color: $SelectedTop;
+    text-align: right;
+}

@@ -1,0 +1,34 @@
+@import 'app/assets/scss/_variables.scss';
+
+.selectedTime {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 3px 10px;
+  text-align: center;
+  border: 0.4px solid $MainDark;
+}
+.textTrack {
+  font-size: 12px;
+  font-weight: 700;
+  color: $MainDark;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.textSelectedTime {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 0 8px 0;
+}
+.loadingContributor {
+  aspect-ratio: 1 /1;
+}
+
+.buttonIcon {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+}

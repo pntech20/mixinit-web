@@ -1,0 +1,110 @@
+@import "app/assets/scss/style.scss";
+@import "app/assets/scss/responsive.scss";
+@import "../../assets/scss/variables";
+
+.containerBannerDetail {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  .title {
+    color: $MainWhite;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+  }
+  .username {
+    color: $MainWhite;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 8px;
+    margin-bottom: 13px;
+  }
+  .itemGenre {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .itemGenres {
+    padding: 6px 10px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .itemsTag {
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .itemsTags {
+    font-weight: 700;
+    padding: 6px 10px;
+    text-align: center;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .description {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: $MainWhite;
+  }
+  .subject {
+    color: $MainWhite;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+  }
+}
+
+.img {
+  background-size: 100% 100%;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.testInside{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tabsBanner{
+  color: white;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  -webkit-transform: translate(0, -60%);
+  -ms-transform: translate(0, -60%);
+  transform: translate(0, -60%);
+  text-align: center;
+}

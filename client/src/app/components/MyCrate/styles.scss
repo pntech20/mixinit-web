@@ -1,0 +1,163 @@
+@import 'app/assets/scss/variables';
+.dropdow-crate {
+  .btn-create-editor {
+    width: 166px;
+    height: 40px;
+    background: $BackgroundCommunity;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 40px;
+    color: $MainWhite;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  .menuCrate {
+    background-color: unset !important;
+    font-weight: 600;
+  }
+  .menuCrate:hover {
+    opacity: 1;
+    background-color: unset;
+  }
+}
+@import 'app/assets/scss/_variables.scss';
+@import 'app/assets/scss/responsive.scss';
+
+.crate {
+  margin-bottom: 20px;
+  .use-the-optional {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .contributor,
+  .expression,
+  .input-contributor {
+    max-width: 437px;
+    min-width: 100px;
+    margin-bottom: 10px;
+    min-height: 40px;
+    width: 100%;
+  }
+
+  .container-btn {
+    width: 100%;
+    gap: 24px;
+    .add-rule {
+      background: $MainDark;
+      text-align: center;
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: $MainWhite;
+        line-height: 40px;
+      }
+    }
+    .reset {
+      background: $LavenderPinocchio;
+      justify-content: center;
+      align-items: center;
+      p {
+        line-height: 40px;
+        font-weight: 600;
+        font-size: 14px;
+        color: $MainDark;
+        margin-left: 5px;
+      }
+    }
+    .add-rule,
+    .reset {
+      width: 100%;
+      height: 40px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .crateoption {
+    padding-bottom: 30px;
+    .name-this-crate {
+      max-width: 1335px;
+      width: 100%;
+    }
+    .popover {
+      position: relative;
+    }
+    .color-container {
+      margin-left: 10px;
+      .swatch {
+        .color {
+          cursor: pointer;
+          width: 40px;
+          height: 40px;
+          border-radius: 5px;
+        }
+      }
+      .sketch-picker {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        z-index: 1;
+      }
+    }
+    .btn-save-crate {
+      width: 100%;
+      height: 40px;
+      background: $OrangeColor;
+      border-radius: 5px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: $MainWhite;
+      min-width: 50px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  @include Responsive(SM) {
+    .contributor,
+    .expression,
+    .input-contributor {
+      width: calc(33.3333% - 92px);
+      margin-right: 14px;
+    }
+    .container-btn {
+      width: auto;
+      gap: 0;
+      .add-rule {
+        margin-right: 14px;
+      }
+      .add-rule,
+      .reset {
+        width: 110px;
+      }
+    }
+    .crateoption {
+      display: flex;
+      .left {
+        width: 100%;
+      }
+      .btn-save-crate,
+      .btn-cancel-crate {
+        width: 150px;
+        margin-left: 10px;
+      }
+      .name-this-crate {
+        width: 100%;
+      }
+      .color-container {
+        margin: 0 5px;
+        .sketch-picker {
+          left: -100px;
+        }
+      }
+    }
+  }
+}
+
+.chakra-accordion__item {
+  border-bottom-width: 0px !important;
+  border-top-width: 0px !important;
+}

@@ -1,0 +1,107 @@
+@import "app/assets/scss/_variables.scss";
+
+.claimSimples {
+  form {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+  }
+  @media screen and (max-width: 500px) {
+    button {
+      padding: 0.5em 1em !important;
+    }
+  }
+}
+button {
+  background: #17f;
+  color: #fff;
+  font: inherit;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  padding: 0.5em 1.5em;
+}
+button:active {
+  background-color: $BlueText;
+}
+input {
+  border: 1px solid $GrayColor;
+  border-radius: 3px;
+  font: inherit;
+  padding: 0.5em;
+  outline: none;
+}
+ul {
+  list-style-type: none;
+  padding: 10px;
+}
+// .items {
+//   display: grid;
+//   gap: 1em;
+// }
+.item {
+  margin-right: 30px;
+  margin-bottom: 10px;
+  background: $MainWhite;
+  cursor: pointer;
+  padding: 1em;
+  box-shadow: 0px 1px 6px 2px $MainDark;
+  display: grid;
+  gap: 1em;
+  grid-template:
+    "d i"
+    "m m";
+}
+.item div {
+  grid-area: d;
+}
+.item img {
+  grid-area: i;
+}
+.item ul {
+  grid-area: m;
+}
+.meta {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 2em;
+  font-size: 80%;
+  color: #555;
+}
+.resultSpotify {
+  z-index: 10;
+  background: $YellowishGreen;
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+  p {
+    margin: 10px 15px;
+    cursor: pointer;
+  }
+}
+.resultYtb {
+  background: #5b7157;
+}
+.ctnLabel {
+  gap: 10px;
+  margin-top: 15px;
+  .itemSample {
+    background: $SelectedTop;
+    border-radius: 5px;
+  }
+  p {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: $MainWhite;
+  }
+}
+
+.closeResult {
+  position: sticky;
+  top: 10px;
+}
+
+.itemsEmpty {
+  padding: 0px !important;
+}

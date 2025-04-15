@@ -1,0 +1,20 @@
+@import 'app/assets/scss/_variables.scss';
+
+.uploadTxt {
+  font-weight: bold;
+  color: $Red;
+}
+
+.uploadValidTxt {
+  color: $Green;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  color: $Red;
+}
+
+.statusMetQuota {
+  color: $OrangeLighter;
+}

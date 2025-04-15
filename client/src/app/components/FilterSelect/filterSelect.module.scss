@@ -1,0 +1,69 @@
+@import 'app/assets/scss/variables';
+
+.optionItem {
+  padding: 5px 10px;
+  margin-right: 10px;
+  border: 0.4px solid $Gray;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.lbHeader {
+  .inputSearchContainer {
+    flex-grow: 1;
+    width: auto;
+
+    input {
+      height: 38px;
+      min-width: 100px;
+    }
+  }
+
+  .sWraper {
+    select {
+      height: 38px;
+    }
+  }
+
+  @media only screen and (max-width: $Desktop) {
+    > div {
+      width: 100%;
+    }
+  }
+}
+
+.light {
+  .ctnInput {
+    input,
+    input::placeholder {
+      color: $MainDark;
+    }
+  }
+
+  input:focus {
+    border-color: $BorderBox4 !important;
+    box-shadow: none !important;
+  }
+}
+
+.dark {
+  .ctnInput {
+    input,
+    input::placeholder {
+      color: $MainWhite;
+    }
+  }
+
+  input:focus {
+    border-color: var(--chakra-colors-whiteAlpha-600);
+    box-shadow: none !important;
+  }
+}
+
+input::placeholder {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.optionItemdark {
+  border: 0.4px solid $Gray;
+}

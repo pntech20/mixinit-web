@@ -1,0 +1,14 @@
+@import 'app/assets/scss/variables';
+.preview {
+  .previewMedia {
+    width: 50px;
+    height: 50px;
+    border: 1px solid $DarkGray;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  img,
+  video {
+    object-fit: cover;
+  }
+}

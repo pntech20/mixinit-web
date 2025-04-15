@@ -1,0 +1,45 @@
+@import 'app/assets/scss/_variables.scss';
+
+.uploadTxt {
+  font-weight: bold;
+  color: $Red;
+}
+
+.uploadValidTxt {
+  color: $Green;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: bold;
+  color: $Red;
+}
+
+.statusMetQuota {
+  color: $OrangeLighter;
+}
+
+.box {
+  padding: 0px 5px 10px 10px !important;
+  margin: 10px 0px;
+}
+
+.title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+}
+
+.tab {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 9px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  &:hover{
+    background: #c20100;
+    color: #fff;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,63 @@
+@import 'app/assets/scss/_variables.scss';
+
+.buttonIcon {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.itemGenre {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+.itemGenres {
+  padding: 6px 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+.itemsTag {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+.itemsTags {
+  font-weight: 700;
+  padding: 6px 10px;
+  text-align: center;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 779px) {
+  .iconEye {
+    right: unset !important;
+    left: 63px;
+    top: 21px !important;
+  }
+}
+
+@media screen and (max-width: 779px) {
+  .iconEyeInside {
+    color: #000 !important;
+  }
+}

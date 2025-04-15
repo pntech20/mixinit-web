@@ -1,0 +1,24 @@
+@import 'app/assets/scss/_variables.scss';
+
+.text {
+  white-space: break-spaces;
+}
+
+.headerTable {
+  height: 40px;
+  padding: 8px !important;
+  line-height: 17px;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.cellTable {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  padding-left: 8px !important;
+  padding-right: 8px !important;
+  height: 60px;
+  line-height: 17px;
+  font-size: 14px;
+}

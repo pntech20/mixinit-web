@@ -1,0 +1,45 @@
+@import 'app/assets/scss/variables';
+
+.list-tracks {
+  .item-track {
+    display: flex;
+    // justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+    align-items: center;
+    // background-color: #e4dede;
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    .text-track {
+      p {
+        margin-bottom: 0;
+        font-size: 12px;
+        max-width: 200px;
+      }
+
+      &__title {
+        font-weight: 600;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      &__artist {
+        color: #838383;
+      }
+    }
+    .remove-track {
+      color: $Red;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.list-tracks-dark {
+  .item-track {
+    background-color: var(--chakra-colors-gray-900);
+  }
+}

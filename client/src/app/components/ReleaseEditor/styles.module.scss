@@ -1,0 +1,24 @@
+@import 'app/assets/scss/_variables.scss';
+
+.buttonIcon {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 500px) {
+  .iconEyeInside {
+    color: #000 !important;
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .iconEye {
+    right: unset !important;
+    left: 63px;
+    top: 21px !important;
+  }
+}

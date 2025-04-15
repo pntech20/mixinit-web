@@ -1,0 +1,12 @@
+@import 'app/assets/scss/_variables.scss';
+
+.trackMetadata {
+  width: 100%;
+  margin-bottom: 10px;
+  // margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $SelectedTop;
+  color: $MainWhite;
+  font-weight: 600;
+}

@@ -1,0 +1,75 @@
+@import 'app/assets/scss/_variables.scss';
+.releaseItem {
+  margin-bottom: 5px;
+  align-items: center;
+  border: 1px solid $Black;
+  border-radius: 5px;
+  justify-content: space-between;
+
+  .avatar {
+    aspect-ratio: 1 / 1;
+    position: relative;
+    object-fit: cover;
+    width: 50px;
+  }
+
+  .createdRelease {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 600;
+  }
+
+  .titleRelease {
+    cursor: pointer;
+    max-width: 120px;
+    margin-bottom: 0px;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+  }
+
+  .titleRelease:hover {
+    color: $LightBlue;
+  }
+
+  .trackByRelease {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 700;
+  }
+
+  .discountPCT {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: $Black;
+    color: $Yellow;
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 600;
+    margin-right: 5px;
+  }
+
+  .iconEdit {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: $Black;
+    transform: rotate(131deg);
+    color: $Yellow;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .iconEdit:hover {
+    border: 2px solid $Black;
+    background-color: $MainWhite;
+    color: $Black;
+  }
+}

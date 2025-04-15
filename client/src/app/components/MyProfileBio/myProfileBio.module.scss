@@ -1,0 +1,13 @@
+@import '../../assets/scss/variables';
+
+.bioContainer {
+  .totalItem {
+    background-color: $Gray;
+    padding: 5px 0px;
+    border-radius: 10px;
+    width: 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

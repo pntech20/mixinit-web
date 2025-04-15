@@ -1,0 +1,23 @@
+{
+  "name": "ccv4",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-postbuild": "cd client && yarn && yarn run build",
+    "start": "node server/index.ts",
+    "predev": "cd client && yarn run build",
+    "dev": "node server/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dayjs": "^1.11.11",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "ramda": "^0.29.1"
+  },
+  "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
+}

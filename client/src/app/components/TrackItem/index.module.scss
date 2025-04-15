@@ -1,0 +1,299 @@
+@import 'app/assets/scss/_variables.scss';
+
+.containerProgress {
+  height: 100%;
+  background-color: #017fed;
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1px;
+  opacity: 0.3;
+}
+.containerTotal {
+  margin-bottom: 10px;
+  border: 0.3px solid;
+  border-color: $LavenderPinocchio;
+  border-radius: 0px;
+}
+
+.genresTagsTrack {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  text-decoration: underline;
+}
+
+.iconButton {
+  background-color: unset !important;
+}
+
+.playingBorder {
+  // border-color: #017fed;
+}
+
+.containerTrackItem {
+  border-radius: 0px;
+  align-items: center;
+  gap: 6px;
+  min-height: 65px;
+  .imageItem {
+    width: 55px;
+    height: 55px;
+    border-radius: 4px;
+  }
+
+  .numberIndex {
+    font-style: normal;
+    font-weight: 600;
+    line-height: 14px;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .titleTrack {
+    font-style: normal;
+    font-weight: 550;
+    line-height: 16px;
+    &:hover {
+      color: rgb(79, 123, 212);
+    }
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .createdTrack {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 500;
+  }
+  .artistTrack {
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 550;
+    
+  }
+
+@media screen and (max-width: 767px) {
+  .artistTrack {
+    line-height: 16px;
+  }
+}
+
+}
+.itemBox {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  padding: 4px 10px;
+  border: 0.4px solid $GrayColor;
+  border-radius: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.itemTags {
+  background: #9b0000;
+  display: flex;
+  height: 20px;
+  align-items: center;
+  padding: 11px 10px;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.itemTime {
+  padding: 4px 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.isClean {
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+}
+
+.containerContent {
+  margin-top: 13px;
+  padding-top: 13px;
+  flex-direction: row-reverse;
+  gap: 14px;
+  align-items: center;
+}
+.bpm {
+  width: 94px;
+}
+
+.key {
+  width: 96px;
+}
+
+.year {
+  width: 70px;
+}
+.time {
+  width: 80px;
+}
+
+.iconRemove {
+  width: 22px;
+  height: 22px;
+  background-color: rgb(232, 232, 232);
+  color: $DarkBlack;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.trackItemGrid {
+  background-size: 100% 100%;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.titleGrid {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.top {
+  position: absolute;
+  top: 0px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.topText {
+  color: $WhiteLight;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  background-color: $Black;
+  opacity: 0.7;
+  padding: 4px 8px;
+  z-index: 2;
+}
+
+.avatar :hover {
+  transition: opacity 0.25s;
+  backdrop-filter: blur(5px);
+}
+
+.content {
+  padding: 12px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.content:hover {
+  background-color: #4f7bd4;
+}
+
+@media screen and (max-width: 475px) {
+  .itemTime {
+    font-size: 10px !important;
+  }
+  .bpm {
+    width: 76px;
+  }
+  .key {
+    width: 82px;
+  }
+  .time {
+    width: 72px;
+  }
+  .topText {
+    font-size: 10px;
+  }
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  outline: none;
+  cursor: ew-resize;
+  margin-left: 10px;
+}
+
+.sliderPlaying {
+  /* WebKit (Chrome, Safari) */
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Set the width of the custom thumb image */
+    height: 15px; /* Set the height of the custom thumb image */
+    background: url('../../assets/icons/sliders.png') center center no-repeat;
+    background-size: cover;
+    cursor: ew-resize;
+  }
+
+  /* Firefox */
+  input[type='range']::-moz-range-thumb {
+    // margin-left: -7px;
+    width: 20px; /* Set the width of the custom thumb image */
+    height: 15px; /* Set the height of the custom thumb image */
+    background: url('../../assets/icons/sliders.png') center center no-repeat;
+    background-size: cover;
+    cursor: ew-resize;
+    border: none;
+  }
+}
+.sliderPlayingDark {
+  /* WebKit (Chrome, Safari) */
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px; /* Set the width of the custom thumb image */
+    height: 15px; /* Set the height of the custom thumb image */
+    background: url('../../assets/icons/sroll_white.png') center center
+      no-repeat;
+    background-size: cover;
+    cursor: ew-resize;
+  }
+
+  /* Firefox */
+  input[type='range']::-moz-range-thumb {
+    // margin-left: -7px;
+    width: 20px; /* Set the width of the custom thumb image */
+    height: 15px; /* Set the height of the custom thumb image */
+    background: url('../../assets/icons/sroll_white.png') center center
+      no-repeat;
+    background-size: cover;
+    cursor: ew-resize;
+    border: none;
+  }
+}

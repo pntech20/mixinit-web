@@ -1,0 +1,77 @@
+@import "app/assets/scss/variables";
+
+.tagsFilteredItem {
+    min-width: 90px;
+    height: 24px;
+    background: $MainDark;
+    color: $MainWhite;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 24px;
+}
+
+.lbHeader {
+    .inputSearchContainer {
+        flex-grow: 1;
+        width: auto;
+
+        input {
+            height: 38px;
+            min-width: 100px;
+        }
+    }
+
+    .sWraper {
+        select {
+            height: 38px;
+        }
+    }
+
+    @media only screen and (max-width: $Desktop) {
+        > div {
+            width: 100%;
+        }
+    }
+}
+
+.light {
+    .ctnInput {
+        input,
+        input::placeholder {
+            color: $MainDark;
+        }
+    }
+
+    input:focus {
+        border-color: $BorderBox4 !important;
+        box-shadow: none !important;
+    }
+}
+
+.dark {
+    .ctnInput {
+        input,
+        input::placeholder {
+            color: $MainWhite;
+        }
+    }
+
+    input:focus {
+        border-color: var(--chakra-colors-whiteAlpha-600);
+        box-shadow: none !important;
+    }
+}
+
+input::placeholder {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.optionItem {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 0.4px solid $MainDark;
+    border-radius: 5px;
+}

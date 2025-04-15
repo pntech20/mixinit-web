@@ -1,0 +1,15 @@
+@import 'app/assets/scss/variables';
+
+.castBtnContainer {
+  font-size: 14px !important;
+  font-weight: 600 !important;
+    height:34px;
+    width:90px;
+    bottom:20px;
+}
+
+.btnSelected {
+  border: none !important;
+  background-color: $OrangeColor !important;
+  color: $White;
+}

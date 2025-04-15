@@ -1,0 +1,12 @@
+@import "app/assets/scss/_variables.scss";
+
+.category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  padding: 0px 30px;
+  height: 40px;
+}

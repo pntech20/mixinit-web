@@ -1,0 +1,266 @@
+@import 'app/assets/scss/_variables.scss';
+@import 'app/assets/scss/_text.scss';
+@import 'app/assets/scss/responsive.scss';
+
+a {
+  text-decoration: none;
+}
+
+.wavesurfer-handle {
+  display: none !important;
+}
+
+.wavesurfer-handle-end {
+  display: none !important;
+}
+
+.css-taj3dd[data-active],
+.css-73pxpg[data-active] {
+  background: unset !important;
+}
+
+a:hover {
+  color: $SelectedTop;
+}
+
+// .chakra-popover__content {
+//   width: 250px !important;
+// }
+
+.chakra-portal {
+  .css-3l0anw {
+    z-index: 0 !important;
+  }
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.white-color {
+  color: $MainWhite;
+}
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: thin !important;
+}
+
+.thin-scrollbar {
+  overflow: auto;
+}
+
+body::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: #999 !important;
+  border-radius: 5px !important;
+}
+
+body::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: #f1f1f1 !important;
+  border-radius: 5px !important;
+}
+
+wave {
+  overflow: hidden !important;
+}
+
+.chakra-popover__popper {
+  right: 0px !important;
+  top: 60px !important;
+  inset: 113px 25px auto auto !important;
+  transform: unset !important;
+}
+
+*[data-focus],
+*:focus {
+  box-shadow: none !important;
+}
+
+._loading_overlay_wrapper {
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+._loading_overlay_overlay {
+  background-color: $ColorBgProgressLoading;
+}
+
+.chakra-menu__menuitem {
+  justify-content: center;
+}
+
+.chakra-checkbox__control[data-checked] {
+  background: #0082f3 !important;
+  border-color: #0082f3 !important;
+}
+
+.pageTopHeaderDarkMode {
+  span {
+    background-color: unset;
+    color: #fff;
+  }
+}
+
+.pageTopHeaderLightMode {
+  span {
+    background-color: unset;
+    color: #000;
+  }
+}
+
+.pagination-container {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: flex-end;
+  gap: 5px;
+
+  li.disable,
+  li.disabled a {
+    cursor: default;
+  }
+
+  li a {
+    font-size: 12px;
+  }
+
+  .pagination {
+    list-style: none;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+
+  .active {
+    border-radius: 50%;
+    background-color: #b4babc;
+  }
+
+  .page-item {
+    list-style: none;
+    padding: 2px 12px;
+    height: 34px;
+    width: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+    border: 1px solid #cbd5e0 !important;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .chakra-popover__popper {
+    min-width: unset !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .chakra-popover__popper {
+    inset: 58px 20px auto auto !important;
+  }
+}
+
+video {
+  pointer-events: none;
+}
+
+#slider-thumb-slider {
+  background: gray !important;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.CookieConsent {
+  animation: slideInUp 1.5s ease-in-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  display: flex;
+  flex-direction: row;
+  align-items: center !important;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  row-gap: 10px;
+}
+
+#Green {
+  accent-color: #1bd32e;
+}
+
+#Red {
+  accent-color: #e41111;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+  opacity: 1;
+  width: 5px;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+}
+
+.swiper-pagination-bullet-active {
+  width: 6px;
+  height: 6px;
+  background-color: #00ff00;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -2px;
+}

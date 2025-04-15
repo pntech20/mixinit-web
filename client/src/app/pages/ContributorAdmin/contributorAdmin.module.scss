@@ -1,0 +1,324 @@
+@import 'app/assets/scss/_variables.scss';
+
+.containerHeader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  align-items: center;
+  justify-content: space-between;
+
+  .numberTrack {
+    background-color: $MainWhite;
+    padding: 1px 3px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 11px;
+    color: $RedLighter;
+    border-radius: 50%;
+    top: 0px;
+    right: 6px;
+  }
+
+  .right {
+    position: relative;
+    margin-left: auto;
+    align-items: center;
+
+    .btnMode {
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      background-color: #e2e8f0;
+      line-height: 30px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .bg-3F444E {
+      background-color: #3f444e;
+    }
+  }
+
+  .right {
+    .menu-list,
+    .css-1ozmk1d {
+      margin-top: 7px;
+      border-radius: 0px;
+    }
+  }
+}
+
+.response {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxIcon {
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  margin-right: 5px;
+  justify-content: center;
+}
+
+.headerInfoWidget {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.userInfoWidget {
+  padding-left: 10px;
+}
+
+.userFullName {
+  font-size: 18px;
+}
+
+.userName {
+  color: $RedLighter;
+  font-size: 16px;
+}
+
+.upgradeTierBtn {
+  color: $MainWhite;
+  background-color: $Orange !important;
+  width: 100% !important;
+  box-shadow: none;
+  font-size: 14px !important;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none !important;
+}
+
+.tokenInfoWidget {
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.numOfTokens {
+  color: $Orange;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.getMoreTxt {
+  font-size: 16px;
+  color: $Orange;
+}
+
+.drawerItem {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+
+  :hover {
+    font-weight: 600;
+  }
+}
+
+.divider {
+  margin-bottom: 10px;
+}
+
+.menuItem {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  margin: 5px 0;
+
+  :hover {
+    font-weight: 600;
+  }
+}
+.menuMoney {
+  font-weight: 900;
+  padding: 0 4px 0 11px;
+  font-size: 20px;
+  line-height: 27px;
+  color: $Orange;
+}
+
+.menuContent {
+  height: 57px;
+  // margin-left: -9px;
+  align-items: center;
+  gap: 6px;
+  color: $MainWhite;
+}
+
+.linkActiveDark {
+  color: #0082f3;
+  opacity: 1 !important;
+}
+
+.linkActiveLight {
+  color: #0082f3;
+}
+
+.menuLinkDark :hover {
+  color: #5c94e8;
+}
+
+.menuLinkLight :hover {
+  color: #5c94e8;
+}
+
+.iconButton {
+  background-color: unset !important;
+}
+
+.iconButton:hover {
+  background-color: unset !important;
+}
+
+.iconFilter {
+  margin-right: 30px;
+}
+
+.iconFilterRelease {
+  margin-right: 5px;
+}
+
+.btnFilter {
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+  color: rgb(116, 116, 116);
+}
+
+.btnFilterAudio {
+  color: #fff;
+  background-color: #002fff;
+  border-radius: 3px;
+}
+
+.btnFilterVideo {
+  background-color: #ffbf00;
+  color: #000;
+  border-radius: 3px;
+}
+
+.divideTo {
+  margin-top: 3px;
+  height: 80%;
+  width: 1px;
+  background-color: #fff;
+  margin-right: 2px;
+  margin-right: 8px;
+  margin-left: 4px;
+}
+
+.btnFilterClean {
+  border-radius: 3px;
+  background-color: #00ff3c;
+  color: #000;
+}
+
+.btnFilterDirty {
+  color: #fff;
+  background-color: #ff0000;
+  border-radius: 3px;
+}
+
+.upgradeLink {
+  display: flex;
+  align-items: center;
+  color: #ffd000;
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.textInfoSubs {
+  color: #fff;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  display: flex;
+}
+
+.textInfoValueSubs {
+  margin-left: 5px;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+@media screen and (max-width: 850px) {
+  .menuPrice {
+    width: 51%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .menuButton {
+    width: 100%;
+  }
+  .menuPrice {
+    width: 100%;
+  }
+  .menuMoney {
+    font-size: 18px;
+  }
+
+  .right {
+    position: unset !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .menuButton {
+    width: 100% !important;
+  }
+
+  .menuItem {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27px;
+    margin: 5px 0;
+
+    :hover {
+      font-weight: 600;
+    }
+  }
+}
+
+.modeBtn {
+  background: none !important;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .modeBtn {
+    padding-left: 0px !important;
+  }
+  .modeBtn {
+    padding-right: 5px !important;
+  }
+}
+@media (max-width: 900px) {
+  .modeBtn {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}

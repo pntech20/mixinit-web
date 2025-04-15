@@ -1,0 +1,177 @@
+@import 'app/assets/scss/_variables.scss';
+@import 'app/assets/scss/responsive.scss';
+
+.dropZoneFile {
+  margin-top: 5px;
+  background: $DisabledBG;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: table;
+  border-radius: 10px;
+  height: 306px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $GrayLighter;
+  h3,
+  p {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-style: normal;
+    display: flex;
+    text-align: center;
+    color: $SilverChaliceAF;
+  }
+}
+
+.dropZoneMedia {
+  width: 100%;
+  margin: 10px 0px;
+  position: relative;
+  border: 3px dashed black;
+  border: 1px solid $BorderBox;
+  border-radius: 4px;
+  cursor: pointer;
+  img {
+    object-fit: cover;
+    max-height: 500px;
+  }
+  p {
+    text-align: center;
+    color: $WhiteLight;
+    font-size: 18px;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .contentDropProfile {
+    text-align: center;
+    color: $WhiteLight;
+    font-size: 24px;
+    font-weight: 800;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .iconClose {
+    position: absolute;
+    right: -10px;
+    font-size: 20px;
+    top: -10px;
+    color: $MainDark;
+  }
+  .iconClosedark {
+    color: $MainWhite;
+  }
+  .dropProfileImg {
+    height: 100px;
+    width: 100%;
+  }
+  .myMedia {
+    width: 100%;
+  }
+}
+
+.editProfile {
+  position: relative;
+  height: 100px;
+  border: 1px solid $WhitePink;
+  background: $WhitePink;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  display: table;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  p {
+    text-align: center;
+    color: $WhiteLight;
+    font-size: 18px;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .contentDropProfile {
+    text-align: center;
+    color: $WhiteLight;
+    font-size: 18px;
+    font-weight: 800;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .dropProfileImg {
+    height: 100px;
+    width: 100%;
+  }
+  @include Responsive(XXS) {
+    height: 100px;
+  }
+  @include Responsive(SM) {
+    height: 100px;
+  }
+}
+
+.imageMyMedia {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  p {
+    text-align: center;
+    color: $GrayText;
+    font-weight: 400;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .contentDropProfile {
+    text-align: center;
+    color: $WhiteLight;
+    font-weight: 800;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .dropProfileImg {
+    height: 100px;
+    width: 100%;
+  }
+  .myMedia {
+    width: 100%;
+  }
+  .textMyMedia {
+    font-size: 24px !important;
+  }
+}
+
+.dropZoneFiledark {
+  border-color: var(--chakra-colors-whiteAlpha-300);
+  background-color: var(--chakra-colors-gray-700);
+}
+
+.infotext {
+  font-size: 13px;
+}
+
+@media(max-width: 992px){
+  .dropZoneMedia {
+    width: 306px ;
+    .myMedia {
+      width: 306px;
+      height: auto;
+      margin: 0px auto;
+    }
+  }
+}

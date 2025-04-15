@@ -1,0 +1,11 @@
+@import "app/assets/scss/variables";
+
+.selectedTimelight {
+    background-color: $MainDark;
+    color: $MainWhite;
+}
+
+.selectedTimedark {
+    background-color: $MainWhite;
+    color: $MainDark;
+}

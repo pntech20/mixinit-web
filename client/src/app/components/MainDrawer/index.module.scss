@@ -1,0 +1,63 @@
+@import 'app/assets/scss/_variables.scss';
+
+.headerInfoWidget {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.userInfoWidget {
+  padding-left: 10px;
+}
+
+.userFullName {
+  font-size: 18px;
+}
+
+.userName {
+  color: $RedLighter;
+  font-size: 16px;
+}
+
+.upgradeTierBtn {
+  color: $MainWhite;
+  background-color: $Orange !important;
+  width: 100% !important;
+  box-shadow: none;
+  font-size: 14px !important;
+  border: none;
+  border-radius: 5px;
+  box-shadow: none !important;
+}
+
+.tokenInfoWidget {
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.numOfTokens {
+  color: $Orange;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.getMoreTxt {
+  font-size: 16px;
+  color: $Orange;
+}
+
+.drawerItem {
+  cursor: pointer;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  
+  :hover {
+    color: #0082f3
+  }
+}
+
+.divider {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,298 @@
+@import 'app/assets/scss/_variables.scss';
+
+#resizable {
+  width: 60%;
+  margin: 0 auto;
+}
+label {
+  margin-left: 10px;
+  cursor: pointer;
+}
+input[type='checkbox'] {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
+.hide_until_load {
+  vertical-align: middle;
+  text-align: center;
+  padding-top: 20px;
+}
+.slider_wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.slider_time_pos {
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  top: 0;
+  left: 20%;
+  z-index: 12;
+  cursor: pointer;
+}
+.play_toggle {
+  width: 40px;
+}
+.ffmpeg {
+  vertical-align: middle;
+  text-align: center;
+  font-family: monospace;
+  padding: 6px;
+  margin-top: 20px;
+  border: 1px dashed gray;
+  background: $MainDark;
+  color: $MainWhite;
+  cursor: text;
+  max-width: 900px;
+}
+.ffmpeg_log {
+  font-family: monospace;
+  white-space: pre;
+  max-height: 100px;
+  max-width: 900px;
+  overflow-y: auto;
+}
+.download_links {
+  a {
+    display: block;
+  }
+}
+.block-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+.noUi-connects {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  z-index: 0;
+}
+.noUi-connect {
+  will-change: transform;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+html {
+  &:not([dir='rtl']) {
+    .noUi-horizontal {
+      .noUi-handle {
+        right: -18px;
+      }
+    }
+  }
+}
+
+// CUSTOM CSS
+.video-navigation {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  position: relative;
+}
+
+.story-board {
+  position: relative;
+  z-index: 1;
+  min-height: 25px;
+  width: 100%;
+  background-color: #000;
+}
+
+.frames {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  .frame {
+    width: 88.8889px;
+    height: 50px;
+    background-color: $MainDark;
+    background-image: url('data:image/svg+xml;utf8,<svg width="200px" height="200px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" class="lds-eclipse" style="animation-play-state: running; animation-delay: 0s; background: none;"><path stroke="none" d="M10 50A40 40 0 0 0 90 50A40 42 0 0 1 10 50" fill="%2300E0FF" style="animation-play-state: running; animation-delay: 0s;"><animateTransform attributeName="transform" type="rotate" calcMode="linear" values="0 50 51;360 50 51" keyTimes="0;1" dur="1s" begin="0s" repeatCount="indefinite" style="animation-play-state: running; animation-delay: 0s;"></animateTransform></path></svg>');
+    background-size: 25%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    flex-grow: 0;
+    pointer-events: none;
+  }
+}
+
+.control-bars {
+  --timeHintScale: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+
+  .masked {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: $MainDark;
+  }
+
+  .masked.left {
+    left: 0;
+  }
+
+  .masked.right {
+    right: 0;
+  }
+
+  .control-bars-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+
+    &:hover {
+      cursor: grab;
+    }
+
+    .control-bar.cb-left {
+      transform: translateX(-100%);
+      border-radius: 4px 0 0 4px;
+    }
+    .control-bar.cb-right {
+      transform: translateX(100%);
+      border-radius: 0 4px 4px 0;
+      right: 0;
+    }
+  }
+
+  .control-bar {
+    width: 10px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: $ColorVideo;
+    pointer-events: all;
+    cursor: ew-resize;
+    box-sizing: border-box;
+
+    &:before {
+      background-repeat: no-repeat;
+      background-position: 50%;
+      content: ' ';
+      width: 3px;
+      height: 15px;
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 3 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 3a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3z' clip-rule='evenodd' fill-rule='evenodd'/%3E%3C/svg%3E");
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-top: 0;
+    }
+
+    &:hover:before {
+      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg viewBox='0 0 3 15' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.5 3a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 9a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM1.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3z' fill='%23fff' clip-rule='evenodd' fill-rule='evenodd'/%3E%3C/svg%3E");
+    }
+
+    &:after {
+      transition: left 0.1s linear, transform 0.1s linear;
+      pointer-events: none;
+      position: absolute;
+      font-size: $FontSize12;
+      color: $ColorVideo;
+      left: 50%;
+      transform: translate(-50%) scaleX(var(--timeHintScale));
+      content: attr(data-content);
+      font-weight: 300;
+      bottom: -23px;
+      width: 100px;
+      text-align: center;
+    }
+  }
+}
+
+.progress-output {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate(-50%);
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  --offset: 0;
+  --contentTop: -24px;
+
+  .progress-line {
+    width: 1px;
+    background-color: $MainWhite;
+    position: absolute;
+    top: var(--offset);
+    bottom: var(--offset);
+    left: 50%;
+
+    &:before {
+      position: absolute;
+      width: 54px;
+      height: 18px;
+      top: -18px;
+      left: -26px;
+      border-radius: 24px;
+      background-color: $ColorVideo;
+      background-repeat: no-repeat;
+      content: attr(data-value);
+      color: $MainDark;
+      font-size: $FontSize12;
+      display: flex;
+      align-items: flex-start;
+      padding: 1px 0;
+      justify-content: center;
+    }
+  }
+}
+
+.time-stripe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 3;
+  width: 1px;
+  background-color: $ColorVideo;
+  pointer-events: none;
+
+  &:before {
+    position: absolute;
+    content: attr(data-value);
+    color: $MainDark;
+    font-size: $FontSize12;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    top: -18px;
+    transform: translateX(-50%);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    width: 100px;
+    color: $ColorVideo;
+  }
+}
+
+.block-bottom {
+  margin-top: 20px;
+}

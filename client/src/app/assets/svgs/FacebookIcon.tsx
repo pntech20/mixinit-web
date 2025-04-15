@@ -1,0 +1,19 @@
+function FacebookIcon(props) {
+  return (
+    <svg
+      width={11}
+      height={19}
+      viewBox="0 0 11 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path
+        d="M11 1.5a.5.5 0 00-.5-.5H8a4.77 4.77 0 00-5 4.5v2.7H.5a.5.5 0 00-.5.5v2.6a.5.5 0 00.5.5H3v6.7a.5.5 0 00.5.5h3a.5.5 0 00.5-.5v-6.7h2.62a.5.5 0 00.49-.37l.72-2.6a.5.5 0 00-.48-.63H7V5.5a1 1 0 011-.9h2.5a.5.5 0 00.5-.5V1.5z"
+        fill="#fff"
+      />
+    </svg>
+  );
+}
+
+export default FacebookIcon;

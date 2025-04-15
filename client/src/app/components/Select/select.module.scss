@@ -1,0 +1,26 @@
+@import "app/assets/scss/variables";
+
+.select{
+  background-color: #fff !important;
+}
+
+.inputSelect {
+  margin-top: 2px;
+  p {
+    font-size: 12px;
+  }
+  .select {
+    .select__placeholder {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .select__value-container {
+      overflow: auto;
+      padding: 0px;
+    }
+  }
+}
+.fullWidth {
+  width: 100% !important;
+}
+

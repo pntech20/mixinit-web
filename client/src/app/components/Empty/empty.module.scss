@@ -1,0 +1,10 @@
+@import "app/assets/scss/_variables.scss";
+
+.empty {
+  a {
+    text-decoration: underline;
+  }
+  a:hover {
+    color: $SelectedTop;
+  }
+}

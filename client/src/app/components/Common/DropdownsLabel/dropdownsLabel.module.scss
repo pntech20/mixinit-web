@@ -1,0 +1,13 @@
+@import "app/assets/scss/_variables.scss";
+
+.wraper {
+    select {
+        line-height: 22px;
+        font-size: $FontSize16;
+        font-weight: 400;
+        border-radius: 2px !important;
+        &:focus {
+            border-color: var(--chakra-colors-whiteAlpha-600);
+        }
+    }
+}

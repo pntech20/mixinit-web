@@ -1,0 +1,36 @@
+@import 'app/assets/scss/_variables.scss';
+
+.search-follower {
+  input,
+  input::placeholder {
+    color: black;
+  }
+  .input-search {
+    border-radius: 6px;
+    width: 100%;
+  }
+  .input-search-release {
+    height: 36px !important;
+  }
+  .w-input {
+    display: block;
+    height: 38px;
+    font-size: $FontSize14;
+    line-height: 1.42857143;
+    &:focus {
+      border-color: $BorderBox4;
+    }
+  }
+}
+
+.search-follower-dark {
+  input,
+  input::placeholder {
+    color: white;
+  }
+  .w-input {
+    &:focus {
+      border-color: var(--chakra-colors-whiteAlpha-600);
+    }
+  }
+}

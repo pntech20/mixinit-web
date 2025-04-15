@@ -1,0 +1,142 @@
+@import 'app/assets/scss/variables';
+
+.step-two {
+  .tabs-list {
+    margin-top: 30px;
+    .css-1xhq01z {
+      border-bottom: 0;
+      .css-1ltezim {
+        border: 1px solid $MainDark;
+        margin-right: 20px;
+        border-radius: 4px;
+      }
+      .css-1ltezim:focus {
+        box-shadow: none;
+      }
+    }
+    .css-a5mhaz {
+      padding: 15px 0px;
+    }
+    .css-1xhq01z {
+      .css-1ltezim[aria-selected='true'],
+      .css-1ltezim[data-selected] {
+        color: $MainWhite;
+        background-color: $Orange;
+        border: none;
+      }
+    }
+  }
+  .select-day {
+    width: auto;
+    height: 26px;
+    background: $BackgroundCommunity;
+    font-size: 14px;
+    padding-right: 16px;
+    text-align: center;
+    option {
+      color: $MainWhite;
+    }
+  }
+  .select-day:focus {
+    border-color: var(--chakra-colors-whiteAlpha-600);
+  }
+  .ctn-btn {
+    margin: 32px 0 24px 0;
+    .btn-audio,
+    .btn-video {
+      width: 103px;
+      height: 36px;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      background-color: $MainWhite;
+      color: $BackgroundCommunity;
+      border: 1px solid $BackgroundCommunity;
+      opacity: 0.5;
+    }
+    .active {
+      color: $MainWhite;
+      background-color: $SelectedTop;
+      border: 0;
+      opacity: 1;
+    }
+  }
+}
+.right {
+  > p {
+    text-align: right;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .btn-public-all-now {
+    display: flex;
+    height: 40px;
+    margin-bottom: 0px;
+    padding: 0px 25px;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $GrayLightest;
+    border-radius: 10px;
+    background-color: $SelectedTop;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+  }
+}
+.borderSolid {
+  border: 1px solid $BorderBox;
+  width: 100%;
+  margin: 24px 0;
+}
+.row-4 {
+  justify-content: space-between;
+  align-items: center;
+
+  .btn-needs-prep {
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: $MainWhite;
+  }
+  .left,
+  .right {
+    align-items: center;
+  }
+  .right {
+    .delete {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      color: $OrangeColor;
+    }
+    @media only screen and (max-width: $Tablet) {
+      flex-direction: column;
+    }
+  }
+}
+.file-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+.track-metadata {
+  width: 100%;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $SelectedTop;
+  color: $MainWhite;
+  font-weight: 600;
+}
+.fill-out-all {
+  font-size: 14px;
+  line-height: 18px;
+}
+.use-the-track {
+  font-size: 14px;
+}

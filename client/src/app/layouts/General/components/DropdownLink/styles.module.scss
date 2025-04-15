@@ -1,0 +1,35 @@
+@import 'app/assets/scss/_variables.scss';
+@import 'app/assets/scss/responsive.scss';
+
+.container {
+  margin-top: -10px !important;
+  margin-bottom: 15px !important;
+}
+
+.sidebarComponents {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 16px !important;
+
+  :hover {
+    font-weight: bold;
+  }
+}
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+.linkActive {
+  color: $SelectedTop;
+  font-weight: 700;
+}
+
+.sidebarIcon {
+  width: 20px;
+}
+
+.menuContainer {
+  padding-bottom: 0 !important;
+}

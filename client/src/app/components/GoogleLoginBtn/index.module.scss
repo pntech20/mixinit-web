@@ -1,0 +1,12 @@
+@import 'app/assets/scss/_variables.scss';
+
+.googleIcon {
+  width: 100% !important;
+  margin-bottom: 10px;
+  border: 0.5px solid $GrayLight;
+
+  p {
+    font-size: 12px;
+    margin-left: 15px;
+  }
+}

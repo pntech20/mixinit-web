@@ -1,0 +1,66 @@
+@import "app/assets/scss/variables";
+
+.editorRelease {
+  overflow-y: auto;
+  height: 600px;
+  padding: 0px 18px;
+}
+
+.content {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 15px 0px 15px 0px;
+}
+
+.content:hover {
+  text-decoration: underline;
+  color: $RedDark;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.dropzoneContent {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.dropzoneTracks {
+  padding-bottom: 10px;
+}
+
+.dustbinDropTrack {
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  display: table;
+  margin: 10px 0px;
+  background-color: $WhitePink;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: $ColorTextGray;
+}
+
+.dustbinDropTrackdark {
+  background-color: var(--chakra-colors-gray-700);
+}
+
+.isActive {
+  background-color: $BlackMomentum;
+}
+
+.canDrop {
+  background-color: $MainDark;
+}
+
+.borderError {
+  border: 1px solid $Orange;
+}

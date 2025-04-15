@@ -1,0 +1,24 @@
+@import 'app/assets/scss/variables';
+
+.wrapperTrackItem {
+  background-color: $WhitePink;
+  border-radius: 10px;
+  border: 1px solid $BorderBox;
+  padding: 8px;
+
+  &:hover {
+    background-color: $BackgroundHover;
+  }
+}
+
+.dark {
+  background-color: var(--chakra-colors-gray-700);
+
+  &:hover {
+    background-color: var(--chakra-colors-gray-600);
+
+    .index-label {
+      background-color: var(--chakra-colors-gray-600);
+    }
+  }
+}

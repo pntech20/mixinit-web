@@ -1,0 +1,39 @@
+.crate-sort {
+  .button-my-crates {
+    gap: 10px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .my-crate {
+    margin: auto;
+    width: 200px;
+    height: 40px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 15px;
+    .md-edit,
+    .delete {
+      cursor: pointer;
+    }
+  }
+  .flex {
+    flex-direction: row;
+  }
+  .active-crate-light {
+    background-color: #f5f5f5;
+  }
+  .active-crate-dark {
+    background-color: var(--chakra-colors-gray-700);
+  }
+  .active-crate-name-light {
+    background-color: #d2dce6;
+  }
+  .active-crate-name-dark {
+    background-color: #626b7d;
+  }
+}

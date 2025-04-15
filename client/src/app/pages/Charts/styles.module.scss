@@ -1,0 +1,26 @@
+.loadingContributor {
+  aspect-ratio: 1 /1;
+}
+
+.numberIndex{
+  width: 25px;
+}
+
+
+.tab-item {
+  padding: 9px 30px;
+  color: #fff;
+  border-style: solid solid none;
+  border-width: 1px;
+  border-color: #505050;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-item {
+    border-bottom: 1px solid #505050;
+  }
+}

@@ -1,0 +1,88 @@
+@import 'app/assets/scss/_variables.scss';
+
+.trackInfoContainer {
+  .drop-zone-file {
+    margin-bottom: 0;
+  }
+  .drop-zone-media {
+    border: none;
+  }
+  input {
+    font-size: 14px;
+  }
+  label {
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .ctnTrackInput {
+    > div {
+      margin-top: 20px;
+      min-width: 160px;
+      flex-direction: column;
+      justify-content: end;
+    }
+  }
+  .ctnSelect {
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    > div {
+      width: 100%;
+      > div {
+        font-size: 14px;
+      }
+    }
+  }
+  .genre,
+  .subGenre {
+    .flex {
+      display: inline-flex;
+      font-size: 14px;
+    }
+  }
+}
+.optionSecond {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  .checkmark {
+    margin-left: 5px;
+  }
+}
+
+.trackMetadata {
+  width: 100%;
+  margin-bottom: 10px;
+  // margin-left: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $SelectedTop;
+  color: $MainWhite;
+  font-weight: 600;
+}
+
+.trackInfoIconRemove {
+  position: relative;
+  z-index: 0;
+  &::after {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    content: '';
+    background-color: black;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  svg {
+    position: absolute;
+    z-index: 2;
+  }
+}
+
+.isClean {
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+}

@@ -1,0 +1,21 @@
+.breakdown {
+  border-radius: 5px;
+  padding: 20px 10px;
+  .titleBreakdown{
+    font-size: 28px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  .textBreakdown{
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 400;
+    span {
+      font-weight: 600;
+    }
+  }
+}

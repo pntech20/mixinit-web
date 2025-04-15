@@ -1,0 +1,48 @@
+// Khai báo kích thước tương ứng với màn hình thiết bị
+
+$XXS: 320px;
+$XS: 480px;
+$SM: 768px;
+$MD: 1024px;
+$XL: 1170px;
+
+// media queries
+@mixin Responsive($canvas) {
+  @if $canvas == XXS {
+    @media only screen and (min-width: $XXS) {
+      @content;
+    }
+  } @else if $canvas == XS {
+    @media only screen and (min-width: $XS) {
+      @content;
+    }
+  } @else if $canvas == SM {
+    @media only screen and (min-width: $SM) {
+      @content;
+    }
+  } @else if $canvas == MD {
+    @media only screen and (min-width: $MD) {
+      @content;
+    }
+  } @else if $canvas == XL {
+    @media only screen and (min-width: $XL) {
+      @content;
+    }
+  }
+}
+
+// media queries chanes
+$small-phone: '(max-width: 375px)';
+$phone: '(max-width: 480px)';
+$tablet-portrait: '(max-width: 767px)';
+$tablet-landscape-desktop: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px) and (max-width: 1919px)';
+$xl-desktop: '(min-width: 1920px)';
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+$retina: 'screen and (-webkit-min-device-pixel-ratio: 2)';
+
+@mixin respond-to($media) {
+  @media #{$media} {
+    @content;
+  }
+}

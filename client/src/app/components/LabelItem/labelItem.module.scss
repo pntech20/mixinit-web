@@ -1,0 +1,50 @@
+@import 'app/assets/scss/_variables.scss';
+
+.labelItem {
+  background-size: contain;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+}
+
+.labelItemContainer {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border-radius: 50%;
+  padding: 2px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: 700;
+  color: $MainWhite;
+}
+
+.labelItemText {
+  font-size: 12px;
+  margin-right: 2px;
+  line-height: 22px;
+  gap: 2px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.card {
+  text-align: center;
+  border: 1px solid $MainDark;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0px 5px;
+  font-size: 14px !important;
+  line-height: 21.6px;
+  font-weight: 700;
+  height: 26px !important;
+  display: flex;
+  color: #fff;
+  background-color: $MainDark;
+}

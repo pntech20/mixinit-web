@@ -1,0 +1,26 @@
+@import "app/assets/scss/_variables.scss";
+
+.containerBoxShare {
+  display: grid;
+  gap: 8px;
+  .textShare {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: $BlueText;
+  }
+  .btnShare {
+    padding: 7px;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 10px;
+    border-radius: 2px;
+    background-color: $WhiteLighter;
+    cursor: pointer;
+    margin-bottom: 16px;
+    border: 0.5px solid rgba(0, 85, 214, 0.4);
+  }
+}
+
+

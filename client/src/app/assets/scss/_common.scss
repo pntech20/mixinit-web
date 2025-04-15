@@ -1,0 +1,27 @@
+@import './_variables.scss';
+
+// custom css
+img {
+  object-fit: contain;
+  margin: 0px;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.red-color {
+  color: $Red;
+}
+
+.black-color {
+  color: $MainDark !important;
+  font-weight: normal !important;
+}
+
+.display-none {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

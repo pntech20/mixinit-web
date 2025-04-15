@@ -1,0 +1,8 @@
+@import "app/assets/scss/_variables.scss";
+
+.cartBtn {
+  border-radius: 50%;
+  background-color: $BgDownload;
+  padding: 3px;
+  cursor: pointer;
+}

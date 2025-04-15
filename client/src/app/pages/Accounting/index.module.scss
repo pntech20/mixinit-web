@@ -1,0 +1,20 @@
+@import 'app/assets/scss/_variables.scss';
+
+.tabList {
+  border: 1px solid #e2e2e2;
+  display: flex;
+  width: max-content;
+}
+
+.themePicker {
+  border: 1px solid black;
+  width: 100%;
+  padding-inline-start: 1rem;
+  height: 2.5rem;
+  border-radius: 6px;
+  border: 1px solid;
+  border-color: inherit;
+  background: inherit;
+  font-size: 14px;
+  font-weight: 600;
+}

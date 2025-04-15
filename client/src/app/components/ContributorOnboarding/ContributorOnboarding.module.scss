@@ -1,0 +1,30 @@
+label{
+  font-size: 16px;
+  font-family: Open Sans, sans-serif;
+  margin-left: 0px !important;
+}
+.input{
+  border: 1px solid #ccc !important;
+  border-radius: 0px !important;
+}
+.button{
+  border-radius: 0px !important;
+}
+@media (max-width: 480px){
+  label{
+    font-size: 14px ;
+  }
+}
+.CountryDropdown{
+  select{
+    border: 1px solid #ccc !important;
+    height: 40px;
+    padding: 0px 12px;
+    width: 100%;
+  }
+}
+.requiredCountry{
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 8px;
+}

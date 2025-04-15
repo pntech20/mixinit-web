@@ -1,0 +1,43 @@
+@import 'app/assets/scss/variables';
+
+.selectedTimelight {
+  background-color: $MainDark;
+  color: $MainWhite;
+}
+
+.selectedTimedark {
+  background-color: $MainWhite;
+  color: $MainDark;
+}
+
+.redHeart {
+  path {
+    fill: $Orange;
+  }
+}
+
+.userName {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 7px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: $SelectedTop;
+  cursor: pointer;
+}
+
+.btnView {
+  font-weight: 400;
+  cursor: pointer;
+  font-size: 16px;
+  color: $SelectedTop;
+  text-align: right;
+}

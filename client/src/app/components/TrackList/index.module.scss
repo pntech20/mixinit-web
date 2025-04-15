@@ -1,0 +1,21 @@
+@import 'app/assets/scss/_variables.scss';
+
+.buttonIcon {
+  cursor: pointer;
+}
+
+.dark {
+  color: #fff;
+  background-color: #000;
+  filter: invert(100%);
+}
+
+.light {
+  color: #000;
+  background-color: #fff;
+  filter: invert(100%);
+}
+
+.padding {
+  padding: 5px;
+}

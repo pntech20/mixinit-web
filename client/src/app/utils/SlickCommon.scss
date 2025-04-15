@@ -1,0 +1,38 @@
+@import "app/assets/scss/responsive.scss";
+
+.icon-arrow {
+  position: absolute;
+  top: -35px;
+  right: 0;
+  cursor: pointer;
+  opacity: 0.4;
+}
+.icon-arrow-prev {
+  right: 35px;
+}
+.icon-arrow:hover {
+  opacity: 1;
+}
+
+.slick-slider {
+  button {
+    display: none !important;
+  }
+}
+
+.slick-list {
+  margin: -7px !important;
+}
+
+.slick-track {
+  display: flex !important;
+  justify-content: space-between !important;
+  padding-top: 12px !important;
+  grid-gap: 26px !important;
+}
+
+@media screen and (max-width: 500px) {
+  .icon-arrow {
+    top: -18px;
+  }
+}

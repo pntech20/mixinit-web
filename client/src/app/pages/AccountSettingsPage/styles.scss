@@ -1,0 +1,43 @@
+@import 'app/assets/scss/_variables.scss';
+
+.container-img {
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.img-avatar {
+  object-fit: unset;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 100%;
+}
+
+.img-cover {
+  object-fit: fill;
+}
+
+.tab-item {
+  padding: 9px 30px;
+  color: #fff;
+  border-style: solid solid none;
+  border-width: 1px;
+  border-color: #505050;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 12px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .tab-item {
+    border-bottom: 1px solid #505050;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tab-item {
+    padding: 7px;
+  }
+}
+
+

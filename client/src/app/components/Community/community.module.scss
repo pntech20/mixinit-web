@@ -1,0 +1,44 @@
+@import 'app/assets/scss/variables';
+
+.contributorItem {
+  display: flex;
+  overflow: hidden;
+  padding: 0px;
+  flex-direction: column;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  transition: all 200ms ease;
+  text-align: center;
+  text-decoration: none;
+}
+
+// .contributorItem:hover {
+//   transform: scale(1.02);
+// }
+
+.linkTo {
+  background-color: #f8f8f8;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.linkItem {
+  cursor: pointer;
+  color: #0073ff;
+  font-size: 12px;
+  text-decoration: underline;
+}
+
+.contributorName {
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}

@@ -1,0 +1,13 @@
+@import 'app/assets/scss/variables';
+
+.tagBtnWidget {
+  font-size: $FontSize12;
+  font-weight: 600;
+  border-radius: 2px;
+  border: 0.4px solid $GrayText;
+  text-align: center;
+}
+
+.dark {
+  color: $MainWhite;
+}

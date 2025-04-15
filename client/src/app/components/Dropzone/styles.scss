@@ -1,0 +1,43 @@
+.drop-zone-file {
+  height: 250px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  display: table;
+  border-radius: 10px;
+  h3 {
+    margin-top: 66px;
+  }
+  p {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-height: 320px;
+    max-width: 110em;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    transition: all 200ms ease;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 50px;
+  }
+}
+.drop-zone-file-dark {
+  background-color: var(--chakra-colors-gray-700);
+}
+
+.drop-zone-image {
+  height: 100%;
+  margin-top: 10px;
+}
+
+.drop-zone-image-square {
+  width: 260px;
+}
+
+.square-image {
+  display: flex;
+}

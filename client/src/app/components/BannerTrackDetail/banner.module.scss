@@ -1,0 +1,176 @@
+@import 'app/assets/scss/_variables.scss';
+
+.container {
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.image {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.logo {
+  position: absolute;
+  left: auto;
+  top: 0px;
+  width: 65px;
+  padding: 10px 0px 0px 10px;
+}
+
+.iconPlay {
+  width: 50px;
+  height: 50px;
+  background-color: $SelectedTop;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.titleBanner {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  color: $MainWhite;
+}
+
+.contentBanner {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: $Gray;
+}
+
+.inforAdditional {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  gap: 14px;
+}
+
+.itemBox {
+  padding: 0px 10px;
+  margin-bottom: 3px;
+  border: 0.4px solid $GrayColor;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.itemBoxTrack {
+  background-color: $MainWhite;
+  color: $DarkBlack;
+}
+
+.titleBanner {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: $MainWhite;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.viewAll {
+  font-size: 14px;
+  font-weight: 600;
+  color: $GreenLight;
+  text-decoration: underline;
+  margin-top: 12px;
+}
+
+.contentTrackDetail {
+  display: grid;
+  padding: 5px 5px 0px 10px;
+  .createdAt {
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+  }
+
+  .title {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: bold;
+  }
+
+  .username {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .textDecoration {
+    text-decoration: underline;
+    font-weight: 300;
+  }
+
+  .genre {
+    font-size: 10px;
+    line-height: 15px;
+    border-radius: 3px;
+    border-color: $Black;
+    padding: 3px 10px;
+    margin-right: 4px;
+    font-weight: bold;
+  }
+}
+
+.hover:hover {
+  text-decoration: underline;
+}
+
+.genreHover:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  .textDecoration {
+    padding: 5px 0px;
+  }
+}
+
+.iconButton {
+  background-color: unset !important;
+}
+
+.iconButton:hover {
+  background-color: unset !important;
+}
+
+.itemTags {
+  background: #963737;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px 15px;
+  font-style: normal;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.imageYoutube {
+  width: 60px;
+  height: 60px;
+}

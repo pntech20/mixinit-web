@@ -1,0 +1,39 @@
+@import 'app/assets/scss/style.scss';
+
+.wrapLoading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background-color: rgba(138, 138, 138, 0.6);
+  opacity: 0.1 !important;
+
+  img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+
+    animation: spin-loading 2s linear 0s infinite;
+    -webkit-animation: spin-loading 2s linear 0s infinite;
+    -moz-animation: spin-loading 2s linear 0s infinite;
+    -o-animation: spin-loading 2s linear 0s infinite;
+  }
+  /* Chrome, Safari, Opera */
+  @keyframes spinLoading {
+    from {
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+    }
+  }
+}

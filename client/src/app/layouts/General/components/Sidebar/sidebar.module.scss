@@ -1,0 +1,36 @@
+@import 'app/assets/scss/_variables.scss';
+
+.sidebarContent {
+  position: fixed;
+  display: block !important;
+  overflow: auto;
+  width: 92%;
+}
+
+.sidebarComponents {
+  display: flex;
+  align-items: center;
+  margin-left: 16px !important;
+  :hover {
+    font-weight: bold;
+  }
+}
+
+*:focus:not(.focus-visible) {
+  outline: none;
+}
+
+@media screen and (min-width: 1025) {
+  .sidebarContent {
+    padding-top: 22px !important;
+  }
+}
+
+.linkActive {
+  color: $SelectedTop;
+  font-weight: 700;
+}
+
+.sidebarIcon {
+  width: 20px;
+}
