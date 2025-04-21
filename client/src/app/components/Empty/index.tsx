@@ -6,7 +6,7 @@ import styles from './empty.module.scss';
 
 export default function Empty(EmptyProps) {
   const { t } = useTranslation();
-  const { text = t('data'), link, color } = EmptyProps;
+  const { text = t('data'), link, color = 'white' } = EmptyProps;
 
   return (
     <Box

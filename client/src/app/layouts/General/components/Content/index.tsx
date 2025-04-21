@@ -16,12 +16,12 @@ export default function Content({ children }: ContentProps) {
       margin={{
         base: `${
           isLargerThan1439 || (isLargerThan1024 && !subscriptions)
-            ? '190px'
+            ? '130px'
             : !isLargerThan1024 && !subscriptions
             ? '105px'
             : !isLargerThan1024 && subscriptions
-            ? '150px'
-            : '185px'
+            ? '130px'
+            : '150px'
         }  auto 40px`,
       }}
     >

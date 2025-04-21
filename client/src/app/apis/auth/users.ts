@@ -6,8 +6,8 @@ import { Nullable } from 'app/constants/types';
 import axiosService from 'app/services/axios.service';
 import { path } from 'ramda';
 
-const BASE_USER_URL = '/v1/users';
-const BASE_AUTH_URL = '/v1/auth';
+const BASE_USER_URL = '/v1/mixinit/users';
+const BASE_AUTH_URL = '/v1/mixinit/auth';
 
 export const confirmVerifyEmail = async payload => {
   try {
@@ -40,7 +40,7 @@ export const getContributors = async (
 ): Promise<Nullable<CommunityResponse>> => {
   const filter = payload?.filter || {};
   const response = await axiosService.post(
-    `${BASE_USER_URL}/contributors`,
+    `${BASE_USER_URL}/contributors-mixinit`,
     filter,
   );
   return response?.data;

@@ -8,8 +8,7 @@
 }
 
 .release-hover-text {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
   width: 100%;
   height: 100%;
   opacity: 0;
@@ -50,31 +49,47 @@
 }
 
 .artwork {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 5px;
 }
 
 .release-date {
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 5px;
-  font-size: 11px;
-  line-height: 11px;
-  display: flex;
-  font-weight: 700;
-  background: #e20100;
-  border: 1px solid #fff;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #00862d;
   color: #fff;
-  font-size: 12px;
+  padding: 5px;
+  border-top-left-radius: 4px;
 }
 
 .author-section {
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  display: flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #00862d;
+  color: #fff;
+  padding: 5px;
+  border-top-right-radius: 4px;
+}
+
+.tracks-section {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #00862d;
+  color: #fff;
+  padding: 5px;
+  border-bottom-left-radius: 4px;
+}
+
+.price-section {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background-color: #00862d;
+  color: #fff;
+  padding: 5px;
+  border-bottom-right-radius: 4px;
 }
 
 .avatar {

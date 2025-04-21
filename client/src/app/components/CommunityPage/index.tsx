@@ -1,10 +1,6 @@
-import {
-  Box,
-  Flex,
-  SimpleGrid,
-  Text,
-  useColorModeValue,
-} from '@chakra-ui/react';
+import { Box, Flex, SimpleGrid, Text, Image } from '@chakra-ui/react';
+import logoIconBlack from 'app/assets/logo/MIXINIT2.png';
+
 import CommunityItem from 'app/components/Community';
 import Empty from 'app/components/Empty';
 import { HelmetPage } from 'app/components/HelmetPage';
@@ -15,16 +11,10 @@ import { useModeTheme } from 'app/hooks/ColorDarkMode/useModeTheme';
 import { useCommunity } from 'app/hooks/Community/useCommunity';
 import { useFilters } from 'app/hooks/filters/userFilters';
 import { useSections } from 'app/hooks/sections/useSections';
-import { renderDraftToHtml } from 'app/utils/renderDraftToHtml';
 import { useCallback, useContext, useEffect, useMemo, useRef } from 'react';
 import { useLocation } from 'react-router-dom';
-import DropDown from '../Common/Dropdowns';
 import Pagination from '../Pagination';
-import SearchAndSort from '../SearchAndSort';
 import styles from './styles.module.scss';
-import { Ads } from '../Ads';
-import { BannerListLabel } from '../BannerListLabel';
-import Crate from '../Crate';
 import { useMediaScreen } from 'app/hooks/mediaScreen/useMediaScreen';
 
 export function CommunityPage() {
@@ -126,7 +116,7 @@ export function CommunityPage() {
           mt="25px"
           gridGap="10px"
           rowGap="10px"
-          columns={{ base: 1, sm: 2, md: 3, lg: 4, xl: 5 }}
+          columns={{ base: 1, sm: 2, md: 3, lg: 4 }}
         >
           {newUsers.map((item, idx) => (
             <CommunityItem
@@ -140,84 +130,34 @@ export function CommunityPage() {
     );
   }, [isLoading, renderUILoadMore, newUsers, filter?.labelId]);
 
-  // useEffect(() => {
-  //   if (scrollValue < 50 && scrollValue !== 0) {
-  //     setIsScrollPastFilter();
-  //   } else if (scrollValue < 220 && isShowFilter) {
-  //     setIsScrollPastFilter();
-  //   } else {
-  //     setIsNotScrollPastFilter();
-  //   }
-  // }, [
-  //   isShowFilter,
-  //   scrollValue,
-  //   setIsNotScrollPastFilter,
-  //   setIsScrollPastFilter,
-  // ]);
-
   return (
     <>
-      <HelmetPage title="Contributors" />
-      <Box bg="#f3f3f3" mb="10px" borderRadius="5px">
-        <Ads />
-        <Flex
-          w="100%"
-          flexDirection={isLargerThan992 ? 'row' : 'column'}
-          gridGap="15px"
-        >
-          <Box w={isLargerThan992 ? '50%' : '100%'}>
-            <BannerListLabel />
-          </Box>
-          <Box w={isLargerThan992 ? '50%' : '100%'}>
-            <Crate />
-          </Box>
-        </Flex>
-      </Box>
-      {pageHeader?.contributor && (
-        <Box
-          mb="20px"
-          className={
-            isDarkMode ? 'pageTopHeaderDarkMode' : 'pageTopHeaderLightMode'
-          }
-        >
-          {renderDraftToHtml(pageHeader?.contributor)}
-        </Box>
-      )}
-      <Flex
-        alignContent="center"
-        alignItems="center"
-        gridGap="12px"
-        flexWrap={{ base: 'wrap', md: 'unset' }}
-      >
-        <Flex gridGap="12px" alignItems="center">
+      <Box ref={ref} mt="20px">
+        <Flex alignItems="center" paddingBottom={'20px'}>
+          <Image
+            h="250px"
+            color="#747474"
+            src={logoIconBlack}
+            ml="16px"
+            borderRight="5px solid #6f747d"
+            padding={'10px'}
+            marginRight={'10px'}
+          />
           <Box>
             <Text
-              fontSize="12px"
-              fontWeight="600"
-              color={useColorModeValue('#616161', '#fff')}
+              color="white"
+              fontSize={'38px'}
+              fontWeight={'bold'}
+              textTransform={'uppercase'}
             >
-              Label:
+              CONTRIBUTORS
             </Text>
-            <DropDown
-              width="170px"
-              value={filter.labelId}
-              filters={sectionsOptions}
-              handleChangeDropDown={value =>
-                handleChangeFilter(value, 'labelId')
-              }
-            />
+            <Text color="white" fontSize={'18px'} fontWeight={'600'}>
+              Our world-class contributors are second to none in DJ supply.
+              Click on one to see what they have to offer!
+            </Text>
           </Box>
         </Flex>
-        <SearchAndSort
-          listSort={listOptionsSortByCommunity}
-          searchValue={searchValue}
-          handleChange={handleChange}
-          valueSort={filter?.sort}
-          handleChangeFilter={handleChangeFilter}
-          placeHolder={'Search username of contributor'}
-        />
-      </Flex>
-      <Box ref={ref} mt="20px">
         {renderContent()}
         <Pagination totalPage={totalPage} setFilter={setFilter} />
       </Box>

@@ -26,6 +26,7 @@
     position: relative;
     margin-left: auto;
     align-items: center;
+    margin-right: 20px;
 
     .btnMode {
       border-radius: 50%;
@@ -52,6 +53,13 @@
       border-radius: 0px;
     }
   }
+}
+
+.menu {
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-right: 30px;
 }
 
 .response {

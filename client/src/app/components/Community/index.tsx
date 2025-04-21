@@ -11,87 +11,31 @@ interface CommunityItemProps {
 }
 
 const CommunityItem = ({ user, labelId }: CommunityItemProps) => {
-  const {
-    username,
-    avatar,
-    slug,
-    canUploadToLabels,
-    lastUploadEachLabel,
-    totalTracksOrReleasesEachLabel,
-  } = user;
-
-  const totalTracks = (totalTracksOrReleasesEachLabel || []).find(
-    item => item?.labelId === labelId,
-  )?.totalTracks;
-
-  const totalReleases = (totalTracksOrReleasesEachLabel || []).find(
-    item => item?.labelId === labelId,
-  )?.totalReleases;
-
-  const lastUploadTrack = (lastUploadEachLabel || []).find(
-    item => item?.labelId === labelId,
-  )?.lastUploadTrack;
-
-  const newCanUploadToLabels = canUploadToLabels.filter(item => item?.isActive);
+  const { username, avatar, slug } = user;
 
   return (
-    <Box className={styles.contributorItem}>
+    <Box textAlign={'center'}>
       <Link to={`/contributors/${slug}`}>
-        <Image
-          src={avatar || PlaceholderBgDefault}
-          fallbacksrc={PlaceholderBgDefault}
-          height="276px"
-          width="100%"
-          objectFit="cover"
-        />
-        <Box className={styles.contributorName}>{username}</Box>
+        <Box className={styles.contributorItem}>
+          <Image
+            src={avatar || PlaceholderBgDefault}
+            fallbacksrc={PlaceholderBgDefault}
+            height="276px"
+            width="100%"
+            objectFit="cover"
+            borderRadius={'9px'}
+          />
+        </Box>
+        <Text
+          fontSize={'20px'}
+          fontWeight={'bold'}
+          color={'white'}
+          marginTop={'10px'}
+          marginBottom={'20px'}
+        >
+          {username}
+        </Text>
       </Link>
-      <Box w="100%" padding="10px" fontSize="12px">
-        {lastUploadTrack && (
-          <Flex
-            justifyContent="space-between"
-            alignItems="center"
-            lineHeight="22px"
-          >
-            <Text>Last Upload:</Text>
-            <Text fontWeight="600">{formatDate(lastUploadTrack)}</Text>
-          </Flex>
-        )}
-        <Flex
-          justifyContent="space-between"
-          alignItems="center"
-          lineHeight="22px"
-        >
-          <Text>Total Tracks:</Text>
-          <Text fontWeight="600">{totalTracks}</Text>
-        </Flex>
-        <Flex
-          justifyContent="space-between"
-          alignItems="center"
-          lineHeight="22px"
-        >
-          <Text>Total Multipacks:</Text>
-          <Text fontWeight="600">{totalReleases}</Text>
-        </Flex>
-        <Flex
-          justifyContent="space-between"
-          alignItems="center"
-          lineHeight="22px"
-        >
-          <Text>Labels:</Text>
-          <Tooltip
-            label={
-              <Box>
-                {newCanUploadToLabels.map((item, idx) => (
-                  <Text key={idx}>{item?.name}</Text>
-                ))}
-              </Box>
-            }
-          >
-            <Text fontWeight="600">{newCanUploadToLabels.length || 0}</Text>
-          </Tooltip>
-        </Flex>
-      </Box>
     </Box>
   );
 };

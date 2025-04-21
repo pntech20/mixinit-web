@@ -43,7 +43,7 @@ export function ReleasesAndPagination({
         <SimpleGrid
           gridGap="10px"
           rowGap="15px"
-          columns={{ base: 1, sm: 2, md: 4, lg: isLabelDetailPage ? 4 : 5 }}
+          columns={{ base: 1, sm: 2, md: 4, lg: 4 }}
         >
           {releases.map((item, idx) => (
             <ReleaseItem key={item._id} release={item} />

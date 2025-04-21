@@ -158,6 +158,7 @@ export default function Pagination({ totalPage, setFilter }: Props) {
         fontSize={14}
         fontWeight={400}
         gridGap={2}
+        color={'white'}
       >
         <Box fontSize={{ base: 12, sm: 14 }}>Results per page</Box>
         <Flex alignItems={'center'} fontSize={14} fontWeight={400} gridGap={2}>
@@ -207,8 +208,9 @@ export default function Pagination({ totalPage, setFilter }: Props) {
           fontWeight={400}
           textAlign={'center'}
           type="number"
+          color={'white'}
         />
-        <Box fontSize={14} fontWeight={400}>
+        <Box fontSize={14} fontWeight={400} color={'white'}>
           of {totalPage}
         </Box>
         <Center

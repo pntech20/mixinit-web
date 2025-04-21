@@ -1,13 +1,9 @@
-import { Box, Flex, Image, Text } from '@chakra-ui/react';
+import { Box, Image, Text } from '@chakra-ui/react';
 import { Release } from 'app/models';
 import { formatDate } from 'app/utils/date';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './styles.scss';
-import CartButton from '../CartButton';
 import { formatMoney } from 'app/utils/currency';
-import { FaUser } from 'react-icons/fa';
-import { Role } from 'app/constants/enum';
-import { useModeTheme } from 'app/hooks/ColorDarkMode/useModeTheme';
 
 interface ReleaseItemProps {
   release: Release;
@@ -22,12 +18,9 @@ const ReleaseItem = ({
   updateWishlistStatusForTopRelease,
   isHomePage = false,
 }: ReleaseItemProps) => {
-  const history = useHistory();
-  const { isDarkMode } = useModeTheme();
-
   const { createdAt, artwork, user, title, trackByRelease, slug } = release;
 
-  const { username, _id: userId, slug: slugUser, avatar } = user;
+  const { username } = user;
 
   return (
     <Box border="1px solid #dbdbdb" borderRadius="5px">
@@ -55,9 +48,13 @@ const ReleaseItem = ({
           </Link>
 
           <Image className="artwork" alt="" src={artwork} />
+          <Text className="release-date">{formatDate(createdAt)}</Text>
+          <Text className="author-section">{username}</Text>
+          <Text className="tracks-section">{trackByRelease || 0} Tracks</Text>
+          <Text className="price-section">{formatMoney(release.price)}</Text>
         </Box>
       </Box>
-      {!isHomePage && (
+      {/* {!isHomePage && (
         <Box>
           <Flex className="release-date">
             <Text>Release Date:</Text>
@@ -197,7 +194,7 @@ const ReleaseItem = ({
             </Flex>
           </Flex>
         </Box>
-      )}
+      )} */}
     </Box>
   );
 };

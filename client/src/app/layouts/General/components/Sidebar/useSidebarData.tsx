@@ -3,12 +3,8 @@ import IconChart from 'app/assets/svgs/IconSidebar/IconChart';
 import IconContact from 'app/assets/svgs/IconSidebar/IconContact';
 import IconContributors from 'app/assets/svgs/IconSidebar/IconContributors';
 import IconHome from 'app/assets/svgs/IconSidebar/IconHome';
-import IconLabel from 'app/assets/svgs/IconSidebar/IconLabel';
 import IconLogout from 'app/assets/svgs/IconSidebar/IconLogout';
 import IconMedia from 'app/assets/svgs/IconSidebar/IconMedia';
-import IconMultipacks from 'app/assets/svgs/IconSidebar/IconMultipacks';
-import IconSubscriptions from 'app/assets/svgs/IconSidebar/IconSubscriptions';
-import IconTracks from 'app/assets/svgs/IconSidebar/IconTracks';
 import IconUploader from 'app/assets/svgs/IconSidebar/IconUploader';
 import useContributorSubscriptionPool from 'app/hooks/services/useContributorSubscriptionPool';
 import { selectAuth } from 'app/pages/Login/slice/selectors';
@@ -80,49 +76,14 @@ export default function useSidebarData() {
         linkTo: '/home',
       },
       {
-        name: t('sidebar.Charts'),
+        name: 'TOP 100',
         icon: <IconChart />,
         linkTo: '/charts',
-      },
-      // {
-      //   name: t('sidebar.HowToGuides'),
-      //   icon: <IconLabels />,
-      //   linkTo: '/how-to-guides',
-      // },
-      {
-        name: t('sidebar.tracks'),
-        icon: <IconTracks />,
-        linkTo: '/tracks',
-      },
-      {
-        name: 'Multipacks',
-        icon: <IconMultipacks />,
-        linkTo: '/multipacks',
       },
       {
         name: t('sidebar.contributors'),
         icon: <IconContributors />,
         linkTo: '/contributors',
-      },
-      {
-        name: t('sidebar.labels'),
-        icon: <IconLabel />,
-        linkTo: '/labels',
-      },
-      {
-        name: t('sidebar.subscriptions'),
-        icon: <IconSubscriptions />,
-        linkTo: '/services',
-      },
-      {
-        name: t('sidebar.contactUs'),
-        icon: <IconContact />,
-        linkTo: '/contact-us',
-      },
-      {
-        name: 'Help',
-        icon: <IconContact />,
-        // linkTo: 'https://www.crooklynclan.net/',
       },
     ];
     let newData = isServices
