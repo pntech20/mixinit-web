@@ -6,7 +6,7 @@ import {
 } from 'app/pages/ForgotPassword/slice/types';
 import axiosService from 'app/services/axios.service';
 
-const AUTH_BASE_URL = '/v1/auth';
+const AUTH_BASE_URL = '/v1/mixinit/auth';
 
 export const forgotPassword = async (
   payload: ForgotPasswordPayload,

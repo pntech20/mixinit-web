@@ -18,8 +18,7 @@ import { TracksCart } from './tracksCart';
 import { ReleasesCart } from './releasesCart';
 import { useModeTheme } from 'app/hooks/ColorDarkMode/useModeTheme';
 import { useDiscounts } from 'app/hooks/discount/useDiscount';
-import logoIconLight from 'app/assets/logo/crooklyn-clan-logo-refresh-black.svg';
-import logoIconBlack from 'app/assets/logo/crooklyn-clan-logo-refresh.png';
+import logoIconLight from 'app/assets/logo/MIXINIT2.png';
 import { useWishlists } from 'app/hooks/wishlist/useWishlists';
 import { PayPalButton } from 'react-paypal-button-v2';
 import { getLocalStorage } from 'app/helpers/local-storage';
@@ -195,23 +194,16 @@ export function CartCheckout({ myWishlists = [], setIsCart }: Props) {
   };
 
   return (
-    <Box
-      className={styles.container}
-      bg={isLightMode ? 'white' : '#1A202C'}
-      pb="20px"
-    >
+    <Box className={styles.container} bg={'#1A202C'} pb="20px">
       <Flex justifyContent="center">
-        {isLightMode ? (
-          <Image width="50%" color="#747474" src={logoIconLight} ml="16px" />
-        ) : (
-          <Image width="50%" src={logoIconBlack} ml="16px" />
-        )}
+        <Image width="20%" color="#747474" src={logoIconLight} ml="16px" />
       </Flex>
       <Text
         textAlign="center"
         fontWeight={700}
         fontSize="42px"
         fontFamily={{ base: 'system-ui', md: 'Rubik80sFade' }}
+        color={'white'}
       >
         MY CART
       </Text>

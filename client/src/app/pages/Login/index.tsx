@@ -13,7 +13,7 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react';
 import { confirmVerifyEmail } from 'app/apis/auth/users';
-import logoIconLight from 'app/assets/logo/crooklyn-clan-logo-refresh-black.svg';
+import logoIconLight from 'app/assets/logo/MIXINIT2.png';
 // import { FacebookLoginBtn } from 'app/components/FacebookLoginBtn';
 import { GoogleLoginBtn } from 'app/components/GoogleLoginBtn';
 import { HelmetPage } from 'app/components/HelmetPage';

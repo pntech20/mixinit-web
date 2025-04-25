@@ -13,7 +13,7 @@ import axiosService from 'app/services/axios.service';
 import { path } from 'ramda';
 import { ReleasesResponse } from '../../pages/Releases/slice/types';
 
-const RELEASE_BASE_URL = '/v1/releases';
+const RELEASE_BASE_URL = '/v1/mixinit/releases';
 
 export const getReleases = async (
   payload: GetReleasesPayload,
@@ -21,7 +21,7 @@ export const getReleases = async (
   const queryParams = payload?.params || '';
   const filter = payload?.filter || {};
   const response = await axiosService.post(
-    `${RELEASE_BASE_URL}/search?${queryParams}`,
+    `${RELEASE_BASE_URL}/search-mixinit?${queryParams}`,
     filter,
   );
   return path<ReleasesResponse>(['data', 'data'], response);

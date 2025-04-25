@@ -48,7 +48,7 @@ export const getContributors = async (
 
 export const getListUsersIsContributor = async () => {
   const response = await axiosService.post(
-    `${BASE_USER_URL}/listContributors`,
+    `${BASE_USER_URL}/listContributors-mixinit`,
     { sort: '' },
   );
 
