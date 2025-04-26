@@ -50,6 +50,7 @@ export interface GetReleasesPayload {
   params: string;
   filter: any;
   isLoadingMore?: boolean;
+  mixinitOnly?: boolean;
 }
 
 export interface CreateReleasePayload {

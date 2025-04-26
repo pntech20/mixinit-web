@@ -21,7 +21,7 @@ export const getReleases = async (
   const queryParams = payload?.params || '';
   const filter = payload?.filter || {};
   const response = await axiosService.post(
-    `${RELEASE_BASE_URL}/search-mixinit?${queryParams}`,
+    `${RELEASE_BASE_URL}/search?${`mixinitOnly=true&${queryParams}`}`,
     filter,
   );
   return path<ReleasesResponse>(['data', 'data'], response);

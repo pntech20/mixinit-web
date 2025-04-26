@@ -40,7 +40,7 @@ export const getContributors = async (
 ): Promise<Nullable<CommunityResponse>> => {
   const filter = payload?.filter || {};
   const response = await axiosService.post(
-    `${BASE_USER_URL}/contributors-mixinit`,
+    `${BASE_USER_URL}/contributors?mixinitOnly=true`,
     filter,
   );
   return response?.data;
@@ -48,7 +48,7 @@ export const getContributors = async (
 
 export const getListUsersIsContributor = async () => {
   const response = await axiosService.post(
-    `${BASE_USER_URL}/listContributors-mixinit`,
+    `${BASE_USER_URL}/listContributors?mixinitOnly=true`,
     { sort: '' },
   );
 
