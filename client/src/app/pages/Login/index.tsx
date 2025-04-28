@@ -214,9 +214,9 @@ export const Login = memo(() => {
                 mt="5px"
                 mb="5px"
               >
-                Your credentials for any previous version of the Crooklyn Clan
-                Vault will not work. Please make a new account for V.4 and use
-                those credentials to log in
+                Your credentials for any previous version of the Mixinit will
+                not work. Please make a new account for V.1 and use those
+                credentials to log in
               </Text>
 
               <Box className={styles.bottomLinkWidget}>

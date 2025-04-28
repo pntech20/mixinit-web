@@ -141,8 +141,8 @@ app.get('/*', (req, res) => {
             if (title && image && description) {
                 // inject meta tags
                 htmlData = htmlData
-                    .replaceAll('Crooklyn Clan Vault V.4', title)
-                    .replaceAll('All the power of the Crooklyn Clan Vault, simplified', description)
+                    .replaceAll('Mixinit V.1', title)
+                    .replaceAll('All the power of the Mixinit, simplified', description)
                     .replaceAll('https://pbs.twimg.com/profile_images/883435588245835776/9ZAyReEQ_400x400.jpg', image);
             }
             return res.send(htmlData);

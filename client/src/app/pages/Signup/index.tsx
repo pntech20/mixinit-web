@@ -82,11 +82,11 @@ export const Signup = memo(() => {
               </a>
               <Text className={styles.headerText}>Welcome Aboard</Text>
               <Text className={styles.titleText}>
-                ATTENTION USERS OF PREVIOUS VERSIONS OF THE CROOKLYN CLAN VAULT
-                You will need to make a new account to use V.4. Your old
-                credentials will not work. Please sign up for a new account,
-                it’s free and required to view the store. Thank you, and sorry
-                for the inconvenience.
+                ATTENTION USERS OF PREVIOUS VERSIONS OF THE MIXINIT You will
+                need to make a new account to use V.1. Your old credentials will
+                not work. Please sign up for a new account, it’s free and
+                required to view the store. Thank you, and sorry for the
+                inconvenience.
               </Text>
             </Box>
 
@@ -259,9 +259,9 @@ export const Signup = memo(() => {
                   mt="0px"
                   mb="5px"
                 >
-                  Your credentials for any previous version of the Crooklyn Clan
-                  Vault will not work. Please make a new account for V.4 and use
-                  those credentials to log in
+                  Your credentials for any previous version of the Mixinit will
+                  not work. Please make a new account for V.1 and use those
+                  credentials to log in
                 </Text>
                 <Box className={styles.bottomLinkWidget}>
                   <Link color={'blue.400'} to="/auth/login">
