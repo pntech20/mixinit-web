@@ -154,11 +154,11 @@ export function App() {
           <WebsocketProvider value={socket}>
             <BrowserRouter>
               <Helmet
-                titleTemplate="%s - Crooklyn Clan"
-                defaultTitle="Crooklyn Clan"
+                titleTemplate="%s - Mixinit"
+                defaultTitle="Mixinit"
                 htmlAttributes={{ lang: i18n.language }}
               >
-                <meta name="description" content="Crooklyn Clan" />
+                <meta name="description" content="Mixinit" />
               </Helmet>
               <CheckNeedConfirmContributorMiddleware />
 

@@ -17,7 +17,7 @@
     "resetPassword": "Reset password"
   },
   "login": {
-    "welcomeToCastDJ": "Welcome To Crooklyn Clan V4",
+    "welcomeToCastDJ": "Welcome To Mixinit V4",
     "signInYourSession": "Sign in to start your session",
     "loginWithGoogle": "Login with Google",
     "loginWithFacebook": "Login with Facebook",
@@ -55,7 +55,7 @@
     "communityPool": "CrooklynClan Community Pool",
     "slotsRemaining": "50 of 50 A/V Slots Remaining",
     "exclusives": "CrooklynClan Exclusives",
-    "vault": "Crooklyn Clan Vault",
+    "vault": "Mixinit",
     "unlimited": "Unlimited A/V Slots",
     "digitalPool": "i12inch Digital Pool",
     "audioFilesMust": "Audio files must be in MP3 320kbps",
@@ -393,7 +393,7 @@
     "optimal": "(square: 1200x1200px optimal)",
     "emailCannot": "Email: (Can not be changed)",
     "userCannot": "Username: (Can not be changed)",
-    "dateOfBirth": "Date of Birth: (You must be 13 years of age or older to use Crooklyn Clan)",
+    "dateOfBirth": "Date of Birth: (You must be 13 years of age or older to use Mixinit)",
     "gender": "Gender",
     "male": "Male",
     "female": "Female",
@@ -406,7 +406,7 @@
     "mustBe28": "date must be less than 28",
     "profile": "Go to Profile",
     "paypalEmail": "paypalEmail",
-    "paypalEmailTitle": "Paypal Email Address: (You must have a Paypal account to cash out with Crooklyn Clan)",
+    "paypalEmailTitle": "Paypal Email Address: (You must have a Paypal account to cash out with Mixinit)",
     "paypalEmailPlaceholder": "Input your paypal email address",
     "facebookUrl": "Facebook:",
     "spotifyUrl": "Spotify:",
@@ -660,7 +660,7 @@
       "user": "Users of CrooklynClan earn tokens for providing various services to other users of the CrooklynClan application. You could be providing audio or video tracks, live DJ, Dance, or other types of performances, live tutoring, and much more, it's really up to your imagination how you earn using CrooklynClan.",
       "castDj": "CASTDJ FOR DJ SERVICES, RECORD LABELS, & MORE!",
       "provider": "CrooklynClan provides a pleasant and unique environment for digital product delivery and compensation (to put it lightly). Our higher end tiers make it possible for other services to profitably create their own special section on ",
-      "pool": "CrooklynClan! Established DJ Pools like The Crooklyn Clan Vault, and i12inch Digital Pool are among some of the DJ services that are already on board!",
+      "pool": "CrooklynClan! Established DJ Pools like The Mixinit, and i12inch Digital Pool are among some of the DJ services that are already on board!",
       "transparency": "TRANSPARENCY IS EVERYTHING.",
       "having": "Having the ability to watch your audio and video files up to the minute for each and every download they receive is how it should be on all music services. Waiting months to find out how many downloads you have on your songs, plus following a trail of \"expenses\" and clauses can suck the fun right out of your craft.",
       "promise": "We promise you, CrooklynClan is the most transparent service you will ever see. Tokens always have a value based on how many are being purchased and cashed out, and you always know that value at all times, in real time.",
@@ -821,7 +821,7 @@
   "quickCharts": "Quick Charts",
   "common": {
     "comingsoon": "Coming soon",
-    "welcome": "Welcome To Crooklyn Clan V4"
+    "welcome": "Welcome To Mixinit V4"
   },
   "cashOut": {
     "description": "Enter a token amount in the box to see the cash out value. Click the 'Request CashOut' button when you are ready to cash out...",

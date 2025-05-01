@@ -116,7 +116,7 @@ app.get('/*', (req, res) => {
                     const contributor = response?.data?.data;
                     if (contributor) {
                         title = contributor?.username;
-                        description = contributor?.biography || 'All the power of the Crooklyn Clan Vault, simplified';
+                        description = contributor?.biography || 'All the power of the Mixinit, simplified';
                         image = contributor?.avatar || 'https://pbs.twimg.com/profile_images/883435588245835776/9ZAyReEQ_400x400.jpg';
                     }
                 }

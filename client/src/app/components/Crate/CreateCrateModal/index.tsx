@@ -207,10 +207,10 @@ const CreateCrateModal = ({
           pt="0px"
         >
           Here, you can program some filter settings to make a "Crate". Your
-          crates show up at the top of most every page across the entire
-          Crooklyn Clan Vault for fast access to your most used searches. We've
-          created a few sample crates for you to start with, but you can
-          customize your crates how they work for you!
+          crates show up at the top of most every page across the entire Mixinit
+          for fast access to your most used searches. We've created a few sample
+          crates for you to start with, but you can customize your crates how
+          they work for you!
         </Text>
         <ModalCloseButton />
         <ModalBody>

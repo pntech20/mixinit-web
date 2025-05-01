@@ -210,22 +210,39 @@ export function CartCheckout({ myWishlists = [], setIsCart }: Props) {
       {isData ? (
         <Box>
           {tracksCart.length > 0 && (
-            <Box>
+            <Box marginBottom="10px">
               <Box p="5px 5px 5px 10px" borderRadius="10px" bg="#252525">
                 <Flex justifyContent="space-between" alignItems="center">
-                  <Text fontSize="18px" fontWeight={700} color="#fff">
-                    TRACKS:${totalPriceTrackAfterDiscount.toFixed(2)}
-                  </Text>
-                  <Text
-                    cursor="pointer"
-                    fontSize="12px"
-                    fontWeight={700}
-                    color="#fff"
-                    p="5px 15px"
-                    onClick={() => setViewTrack(!viewTrack)}
-                  >
-                    VIEW
-                  </Text>
+                  <Flex fontSize="18px" fontWeight={700} color="#fff">
+                    TRACKS:&nbsp;
+                    <Text color="#62ff00"> {tracksCart.length}</Text>
+                  </Flex>
+                  <Flex gridGap={'10px'}>
+                    <Text fontSize="18px" fontWeight={700} color="#fff">
+                      DISCOUNT:
+                    </Text>
+                    <Text fontSize="18px" fontWeight={700} color="red">
+                      ${discountTrack}%
+                    </Text>
+                    <Text fontSize="18px" fontWeight={700} color="#fff">
+                      TOTAL:
+                    </Text>
+                    <Text fontSize="18px" fontWeight={700} color="#62ff00">
+                      ${totalPriceTrackAfterDiscount.toFixed(2)}
+                    </Text>
+                    <Text
+                      cursor="pointer"
+                      fontSize="12px"
+                      fontWeight={700}
+                      color="#fff"
+                      p="5px 15px"
+                      onClick={() => setViewTrack(!viewTrack)}
+                      border="1px solid #fff"
+                      borderRadius={'5px'}
+                    >
+                      VIEW
+                    </Text>
+                  </Flex>
                 </Flex>
                 {viewTrack && (
                   <TracksCart
@@ -235,45 +252,42 @@ export function CartCheckout({ myWishlists = [], setIsCart }: Props) {
                   />
                 )}
               </Box>
-              <Box p="10px 5px 20px" fontSize="16px" fontFamily="sans-serif">
-                <Text>
-                  You have <strong>{tracksCart.length}</strong> tracks in your
-                  cart.
-                </Text>
-                {discountTracks?.isDiscount ? (
-                  <Text>
-                    You are saving <strong>{discountTrack}</strong>% on all
-                    tracks.
-                  </Text>
-                ) : (
-                  <Text>
-                    You are saving <strong>{discountTrack}</strong>% on all
-                    tracks. Add <strong>{discountInfoTrack?.moreTrack}</strong>{' '}
-                    more tracks to save{' '}
-                    <strong>{discountInfoTrack?.percentage}</strong>% on all
-                    tracks.
-                  </Text>
-                )}
-              </Box>
             </Box>
           )}
           {releasesCart.length > 0 && (
             <Box>
               <Box p="5px 5px 5px 10px" borderRadius="10px" bg="#252525">
                 <Flex justifyContent="space-between" alignItems="center">
-                  <Text fontSize="18px" fontWeight={700} color="#fff">
-                    MULTIPACKS:${totalPriceReleaseAfterDiscount.toFixed(2)}
-                  </Text>
-                  <Text
-                    cursor="pointer"
-                    fontSize="12px"
-                    fontWeight={700}
-                    color="#fff"
-                    p="5px 15px"
-                    onClick={() => setViewRelease(!viewRelease)}
-                  >
-                    VIEW
-                  </Text>
+                  <Flex fontSize="18px" fontWeight={700} color="#fff">
+                    MULTIPACKS:&nbsp;
+                    <Text color="#62ff00"> {releasesCart.length}</Text>
+                  </Flex>
+                  <Flex gridGap={'10px'}>
+                    <Text fontSize="18px" fontWeight={700} color="#fff">
+                      DISCOUNT:
+                    </Text>
+                    <Text fontSize="18px" fontWeight={700} color="red">
+                      ${discountRelease}%
+                    </Text>
+                    <Text fontSize="18px" fontWeight={700} color="#fff">
+                      TOTAL:
+                    </Text>
+                    <Text fontSize="18px" fontWeight={700} color="#62ff00">
+                      ${totalPriceReleaseAfterDiscount.toFixed(2)}
+                    </Text>
+                    <Text
+                      cursor="pointer"
+                      fontSize="12px"
+                      fontWeight={700}
+                      color="#fff"
+                      p="5px 15px"
+                      onClick={() => setViewRelease(!viewRelease)}
+                      border="1px solid #fff"
+                      borderRadius={'5px'}
+                    >
+                      VIEW
+                    </Text>
+                  </Flex>
                 </Flex>
                 {viewRelease && (
                   <ReleasesCart
@@ -283,75 +297,47 @@ export function CartCheckout({ myWishlists = [], setIsCart }: Props) {
                   />
                 )}
               </Box>
-              <Box p="10px 5px 20px" fontSize="16px" fontFamily="sans-serif">
-                <Text>
-                  You have <strong>{releasesCart.length}</strong> mutltipacks in
-                  your cart.
-                </Text>
-                {!discountReleases?.isDiscount ? (
-                  <Text>
-                    You are saving <strong>{discountRelease}</strong>% on all
-                    mutltipacks. Add{' '}
-                    <strong>{discountInfoRelease?.moreRelease}</strong> more
-                    mutltipacks to save{' '}
-                    <strong>{discountInfoRelease?.percentage}</strong>% on all
-                    mutltipacks.
-                  </Text>
-                ) : (
-                  <Text>
-                    You are saving <strong>{discountRelease}</strong>% on all
-                    mutltipacks.
-                  </Text>
-                )}
-              </Box>
             </Box>
           )}
 
-          <Box
-            borderBottom="3px solid #252525"
-            borderTop="3px solid #252525"
-            py="20px"
-            fontSize="17px"
-            fontWeight={600}
-          >
-            <Flex
-              p="5px 5px 5px 10px"
-              justifyContent="space-between"
-              alignItems="center"
-            >
-              <Text>
-                You are saving a total of $
-                <strong>
-                  {(totalSaveTrack + totalSaveRelease).toFixed(2)}
-                </strong>{' '}
-                on your entire order.
-              </Text>
-              <Text>TOTAL : ${totalPriceCheckout}</Text>
-            </Flex>
-          </Box>
-          <Button
+          <Flex
+            w="100%"
+            gap="20px"
+            alignItems="center"
+            justifyContent="right"
             mt="30px"
             mb="15px"
-            background="#000"
-            color="#fff"
-            _hover={{ background: '#000', color: '#fff' }}
-            onClick={() => {
-              handleCreateOrderApi();
-              sendSlack({
-                text: '👀 Opened Checkout',
-                block: '👀 Opened Checkout',
-                channelId: SLACK_CHANNELS.PAYPAL,
-                attachments: [
-                  `totalPriceCheckout: ${totalPriceCheckout}`,
-                  `User ID: ${userDetail?._id}`,
-                ],
-              });
-            }}
-            isLoading={isLoadingCreateOrder}
-            isDisabled={isLoadingWishlist || isLoadingCreateOrder}
           >
-            Checkout
-          </Button>
+            <Text
+              color={'#fff'}
+              fontSize="20px"
+              fontWeight={700}
+              marginRight={'10px'}
+            >
+              TOTAL: ${totalPriceCheckout}
+            </Text>
+            <Button
+              background="#62ff00"
+              color="black"
+              _hover={{ background: '#000', color: '#fff' }}
+              onClick={() => {
+                handleCreateOrderApi();
+                sendSlack({
+                  text: '👀 Opened Checkout',
+                  block: '👀 Opened Checkout',
+                  channelId: SLACK_CHANNELS.PAYPAL,
+                  attachments: [
+                    `totalPriceCheckout: ${totalPriceCheckout}`,
+                    `User ID: ${userDetail?._id}`,
+                  ],
+                });
+              }}
+              isLoading={isLoadingCreateOrder}
+              isDisabled={isLoadingWishlist || isLoadingCreateOrder}
+            >
+              Checkout
+            </Button>
+          </Flex>
         </Box>
       ) : (
         <Flex minH="200px" w="100%" alignItems="center" justifyContent="center">

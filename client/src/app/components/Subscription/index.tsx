@@ -337,9 +337,9 @@ const Subscription = () => {
           </FormControl>
         </Box>
         <Text className={styles.subscriptionUnder}>
-          UNDER NO CIRCUMSTANCES ARE THE FILES OBTAINED IN THE CROOKLYN CLAN
+          UNDER NO CIRCUMSTANCES ARE THE FILES OBTAINED IN THE Mixinit
           VAULT TO BE SOLD OR REDISTRIBUTED WITHOUT THE EXPRESS WRITTEN CONSENT
-          OF CROOKLYN CLAN INC. CROOKLYN CLAN RESERVES THE RIGHT TO REVOKE ANY
+          OF Mixinit INC. Mixinit RESERVES THE RIGHT TO REVOKE ANY
           MEMBERSHIP, ACCESS POINT, OR SUBSCRIPTION AT ANY TIME AT OUR OWN
           DISCRETION WITHOUT WARNING. IF WE SUSPECT YOU ARE SELLING OR PUBLICLY
           SHARING THE FILES YOU OBTAIN HERE WE WILL ELIMINATE YOUR ACCESS
@@ -350,9 +350,9 @@ const Subscription = () => {
             <Checkbox id="certify" {...register('certify')}>
               <Text className={styles.textCheckbox} color={colorForm}>
                 I CERTIFY THAT I WILL NOT SELL OR PUBLICLY SHARE THE FILES
-                OBTAINED IN THE CROOKLYN CLAN VAULT. I ASSUME FULL
+                OBTAINED IN THE Mixinit VAULT. I ASSUME FULL
                 RESPONSIBILITY RESPONSIBILITY RESPONSIBILITY FOR THE SHARING OR
-                REDISTRIBUTION OF THE FILES I CROOKLYN CLAN VAULT.
+                REDISTRIBUTION OF THE FILES I Mixinit VAULT.
               </Text>
             </Checkbox>
           </FormControl>

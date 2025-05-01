@@ -82,7 +82,7 @@ export default function ContributorDocument({ setIsAgree, popContactForm }) {
       >
         <ListItem>
           <span>
-            ALL WORKS CONTRIBUTED TO THE CROOKLYN CLAN VAULT MUST BE DERIVATIVE
+            ALL WORKS CONTRIBUTED TO THE Mixinit VAULT MUST BE DERIVATIVE
             WORKS.
           </span>
           <br />
@@ -209,7 +209,7 @@ export default function ContributorDocument({ setIsAgree, popContactForm }) {
             individual disc jockey, artist, or, in the case where you are
             involved with a band or group, an individual acting as the legal
             representative of your band or group) (“Editor” "Contributor",
-            “you”) and Crooklyn Clan Inc. (referred to as “Crooklyn”, "we", or
+            “you”) and Mixinit Inc. (referred to as “Crooklyn”, "we", or
             "us"). By submitting any material or information to Crooklyn, its
             successors, assigns, agents, distributors and licensees, you
             explicitly confirm that you have read, understood, and agreed to the

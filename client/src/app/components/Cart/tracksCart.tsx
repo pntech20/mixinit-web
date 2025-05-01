@@ -84,24 +84,30 @@ export function TracksCart({ tracksCart, setIsCart, discountTrack }: Props) {
                       mr="auto"
                       color="#fff"
                     >
-                      <Box>{i + 1}.</Box>
+                      <Box fontSize={'25px'} fontWeight={'bold'}>
+                        #
+                      </Box>
                       <Box
                         onClick={() => handlePlay(item.track, i)}
                         cursor="pointer"
                       >
                         {isPlaying && index === i ? (
-                          <FaPauseCircle size={20} />
+                          <FaPauseCircle size={30} />
                         ) : (
-                          <FaPlayCircle size={20} />
+                          <FaPlayCircle size={30} />
                         )}
                       </Box>
                       <Box
-                        mr="auto"
                         onClick={() => handleOnclickTitle(item)}
                         cursor="pointer"
                         _hover={{ color: '#0082F3' }}
                       >
-                        {item.track.title}
+                        <Box mr="auto" marginBottom={'5px'}>
+                          {item.track.title}
+                        </Box>
+                        <Box fontWeight={400} mr="auto">
+                          {item.track.artist}
+                        </Box>
                       </Box>
                     </Flex>
                     <Flex
@@ -111,7 +117,7 @@ export function TracksCart({ tracksCart, setIsCart, discountTrack }: Props) {
                       gridGap="5px"
                       color="#fff"
                     >
-                      <Box minW="60px">{formatMoney(item.track.price)}</Box>
+                      {/* <Box minW="60px">{formatMoney(item.track.price)}</Box> */}
                       {Number(discountTrack) > 0 && (
                         <>
                           <Box minW="90px" color="#008820">

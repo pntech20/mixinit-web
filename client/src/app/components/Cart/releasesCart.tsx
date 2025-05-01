@@ -48,7 +48,9 @@ export function ReleasesCart({
               color="#fff"
             >
               <Flex mr="auto" alignItems="center" gridGap="5px">
-                <Box minW="25px">{i + 1}.</Box>
+                <Box fontSize={'25px'} fontWeight={'bold'}>
+                  #
+                </Box>
                 <img
                   src={item.release.artwork}
                   alt=""
@@ -68,12 +70,23 @@ export function ReleasesCart({
               </Flex>
               <Flex
                 alignItems="center"
-                gridGap="5px"
+                gridGap="15px"
                 ml={isLargerThan800 ? '0px' : 'auto'}
                 mt={isLargerThan800 ? '0px' : '10px'}
                 color="#fff"
               >
-                <Box minW="60px">{formatMoney(item.release.price)}</Box>
+                <Flex gridGap="5px">
+                  TRACKS:&nbsp;
+                  <Box color="#62ff00">{item.release.tracks.length}</Box>
+                </Flex>
+                <Flex gridGap="5px">
+                  SAVE:&nbsp;
+                  <Box color="red">{discountRelease}%</Box>
+                </Flex>
+                <Flex>
+                  TOTAL:&nbsp;
+                  <Box color="#62ff00">{formatMoney(item.release.price)}</Box>
+                </Flex>
                 {Number(discountRelease) > 0 && (
                   <>
                     <Box minW="90px" color="#008820">

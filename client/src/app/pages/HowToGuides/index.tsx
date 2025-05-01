@@ -149,25 +149,23 @@ export function HowToGuidesPage() {
       <Banner />
       <Box className={styles.title}>How It Works</Box>
       <Text className={styles.description}>
-        The all new Crooklyn Clan Vault 4.0 has never been easier and more
-        rewarding for DJ's! Tracks and Releases are the two product types
-        available for purchase. Whether you purchase a Release, or cherry pick
-        individual tracks, you eventually end up with just TRACKS to download
-        that will go to your "My Library" section. If you purchased a release
-        that has 50 tracks inside for $20 you still purchased 50 tracks - you
-        simply received a discount on them by purchasing them inside of a
-        release because releases are a bunch of tracks for a discounted price
-        off the retail cost of tracks if you were to purchase them one at a
-        time.
+        The all new Mixinit 1.0 has never been easier and more rewarding for
+        DJ's! Tracks and Releases are the two product types available for
+        purchase. Whether you purchase a Release, or cherry pick individual
+        tracks, you eventually end up with just TRACKS to download that will go
+        to your "My Library" section. If you purchased a release that has 50
+        tracks inside for $20 you still purchased 50 tracks - you simply
+        received a discount on them by purchasing them inside of a release
+        because releases are a bunch of tracks for a discounted price off the
+        retail cost of tracks if you were to purchase them one at a time.
       </Text>
       <Box className={styles.title}>Tracks</Box>
       <Box className={styles.description}>
-        Tracks (Audio or Video) are the foundation of the Crooklyn Clan Vault.
-        Products are either individual tracks or groups of tracks which are
-        called Releases. Both have an automated discounting system in place
-        based on the amount of tracks or releases in your cart at the time of
-        checkout. More about that in a moment, first lets take a look at
-        tracks..
+        Tracks (Audio or Video) are the foundation of the Mixinit. Products are
+        either individual tracks or groups of tracks which are called Releases.
+        Both have an automated discounting system in place based on the amount
+        of tracks or releases in your cart at the time of checkout. More about
+        that in a moment, first lets take a look at tracks..
       </Box>
       <Box py="25px">
         {trackList.map((item, idx) => (
@@ -239,9 +237,9 @@ export function HowToGuidesPage() {
       </Text>
       <Box className={styles.title}>Contributors</Box>
       <Text className={styles.description}>
-        Our contributors provide the content you find across the Crooklyn Clan
-        Vault. Finding a contributor that makes edits in a way that makes you
-        very comfortable playing them will be a game changer for the working DJ.
+        Our contributors provide the content you find across the Mixinit.
+        Finding a contributor that makes edits in a way that makes you very
+        comfortable playing them will be a game changer for the working DJ.
       </Text>
       <Box className={styles.title}>Labels</Box>
       <Text className={styles.description}>
