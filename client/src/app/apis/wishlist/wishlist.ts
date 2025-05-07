@@ -11,7 +11,7 @@ export const getMyWishlist = async () => {
 
 export const checkoutMyWishlist = async payload => {
   const response = await axiosService.post(
-    `${WISHLIST_BASE_URL}/checkout`,
+    `${WISHLIST_BASE_URL}/checkout?mixinitOnly=true`,
     payload,
   );
   return response?.data?.data;
@@ -51,7 +51,9 @@ export const removeReleaseToMyWishlist = async releaseIds => {
 };
 
 export const handleCreateOrder = async () => {
-  const response = await axiosService.get(`${WISHLIST_BASE_URL}/create-order`);
+  const response = await axiosService.get(
+    `${WISHLIST_BASE_URL}/create-order?mixinitOnly=true`,
+  );
   return response?.data;
 };
 
