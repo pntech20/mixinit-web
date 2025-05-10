@@ -82,28 +82,8 @@ export function ReleaseDetail() {
   return (
     <>
       <HelmetPage title="Multipacks detail" />
-      <Box bg="#f3f3f3" mb="10px" borderRadius="5px">
-        <Ads />
-        <Flex
-          w="100%"
-          flexDirection={isLargerThan992 ? 'row' : 'column'}
-          gridGap="15px"
-        >
-          <Box w={isLargerThan992 ? '50%' : '100%'}>
-            <BannerListLabel />
-          </Box>
-          <Box w={isLargerThan992 ? '50%' : '100%'}>
-            <Crate />
-          </Box>
-        </Flex>
-      </Box>
       {pageHeader?.release && (
-        <Box
-          mb="20px"
-          className={
-            isDarkMode ? 'pageTopHeaderDarkMode' : 'pageTopHeaderLightMode'
-          }
-        >
+        <Box mb="20px" className={'pageTopHeaderDarkMode'}>
           {renderDraftToHtml(pageHeader?.release)}
         </Box>
       )}
@@ -113,7 +93,11 @@ export function ReleaseDetail() {
           src={releaseDetail?.user.avatar || logoIconLight}
         />
       </Box> */}
-      <Flex gridGap="20px" display={{ lg: 'flex', base: 'block' }}>
+      <Flex
+        gridGap="20px"
+        display={{ lg: 'flex', base: 'block' }}
+        color={'white'}
+      >
         {!releaseDetail ? (
           <Box w={{ lg: '25%', base: '100%' }} ref={ref}>
             <SkeletonItem
@@ -137,7 +121,7 @@ export function ReleaseDetail() {
           </Box>
         )}
 
-        <Box w={{ lg: '75%', base: '100%' }}>
+        <Box w={{ lg: '75%', base: '100%' }} color={'white'}>
           <Box mb="30px" justifyContent="space-between" flexWrap="wrap">
             <Box minH="70px" p={{ md: '5px' }}>
               {!isLoadingMore && releaseDetail && (
@@ -147,7 +131,7 @@ export function ReleaseDetail() {
                     fontWeight={400}
                     pb="10px"
                     px={{ md: '5px' }}
-                    color={isLightMode ? '#000' : '#fff'}
+                    color={'#fff'}
                   >
                     This multipack is brought to you by:
                   </Text>
@@ -168,28 +152,8 @@ export function ReleaseDetail() {
                             width="100px"
                             height="100px"
                           />
-                          <Text
-                            fontSize="16px"
-                            fontWeight={600}
-                            color={isLightMode ? '#000' : '#fff'}
-                          >
+                          <Text fontSize="16px" fontWeight={600} color={'#fff'}>
                             {releaseDetail?.user.username}
-                          </Text>
-                        </Flex>
-                      </Link>
-                      <Link to={`/labels/${releaseDetail?.label?.slug}`}>
-                        <Flex align="center" gridGap="5px">
-                          <Image
-                            src={releaseDetail?.label?.squareImageUrl}
-                            width="100px"
-                            height="100px"
-                          />
-                          <Text
-                            fontSize="16px"
-                            fontWeight={600}
-                            color={isLightMode ? '#000' : '#fff'}
-                          >
-                            {releaseDetail?.label?.name}
                           </Text>
                         </Flex>
                       </Link>

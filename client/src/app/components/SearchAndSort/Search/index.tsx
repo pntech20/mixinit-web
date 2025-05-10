@@ -108,7 +108,7 @@ export default function Search({
           fontSize="12px"
           fontWeight="600"
           // eslint-disable-next-line react-hooks/rules-of-hooks
-          color={useColorModeValue('#616161', '#fff')}
+          color={'white'}
         >
           Search and filter the table to find exactly what you are looking for!
         </Text>
@@ -124,7 +124,7 @@ export default function Search({
                     handleFilterCheckbox(e.target.name, e.target.checked)
                   }
                 >
-                  <Text fontWeight="400" fontSize="11px">
+                  <Text fontWeight="400" fontSize="11px" color={'white'}>
                     {value?.label}
                   </Text>
                 </Checkbox>

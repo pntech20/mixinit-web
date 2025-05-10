@@ -64,7 +64,7 @@ export default function InputSearch(props: InputSearchProps) {
           h="100%"
           mt="1px"
           pointerEvents="none"
-          children={<BiSearch color="gray.300" />}
+          children={<BiSearch color="#fff" />}
         />
       )}
       <Input
@@ -77,10 +77,11 @@ export default function InputSearch(props: InputSearchProps) {
         onChange={e => onchangeInput(e)}
         value={value}
         fontSize={fontSize}
-        _placeholder={{ fontSize: _placeholderFontSize, color: '#d4d4d4' }}
-        _dark={{ _placeholder: { color: '#d4d4d4' } }}
+        _placeholder={{ fontSize: _placeholderFontSize, color: '#fff' }}
+        _dark={{ _placeholder: { color: '#fff' } }}
         onFocus={handleInputFocus}
         onBlur={handleInputBlur}
+        color={'white'}
       />
       {isOnchangeInput && !isNotUseInputRigh && (
         <InputRightElement

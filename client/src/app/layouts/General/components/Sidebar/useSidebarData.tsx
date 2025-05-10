@@ -78,7 +78,7 @@ export default function useSidebarData() {
       {
         name: 'TOP 100',
         icon: <IconChart />,
-        linkTo: '/charts',
+        linkTo: '/top-100',
       },
       {
         name: t('sidebar.contributors'),

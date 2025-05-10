@@ -75,7 +75,13 @@ export function MyProfileLabel({ userDetails }: any) {
   return (
     <>
       {userDetails?.username && (
-        <Text fontSize="38px" lineHeight="44px" mb="10px" fontWeight="bold">
+        <Text
+          fontSize="38px"
+          lineHeight="44px"
+          mb="10px"
+          fontWeight="bold"
+          color="white"
+        >
           {userDetails?.username}'s Labels
         </Text>
       )}

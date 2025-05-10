@@ -17,8 +17,8 @@ export function MyReleases({ inMyMedia = true }: Props) {
   }, [onGetTracks]);
 
   const renderTab = useCallback(() => {
-    return <ReleaseList releases={releases} inMyMedia={inMyMedia} />;
-  }, [inMyMedia, releases]);
+    return <ReleaseList releases={releases} />;
+  }, [releases]);
 
   return (
     <Box>

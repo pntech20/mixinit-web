@@ -177,6 +177,27 @@ export const useReleases = () => {
     );
   }, [perPageLocalStorage, actions, dispatch, filter]);
 
+  const onGetReleasesTop100 = useCallback(() => {
+    const page = filter.page || 1;
+    const pageSize = 100;
+    const params = getPaginationParams({ page, pageSize });
+    dispatch(
+      actions.getReleasesRequest({
+        params,
+        filter: {
+          ...filter,
+          sort: filter.sort,
+          dateRange: filter.dateRange,
+          showSections: filter?.showSections?.map(item => item.value),
+          showContributors: filter?.showContributors?.map(item => item.value),
+          showTags: filter?.showTags?.map(item => item.value),
+          showGenres: filter?.showGenres?.map(item => item.value),
+          // ...querystring.parse(search),
+        },
+      }),
+    );
+  }, [actions, dispatch, filter]);
+
   const onGetByCreateReleases = useCallback(
     (page = 1, pageSize = 10) => {
       const params = getPaginationParams({ page, pageSize });
@@ -462,5 +483,6 @@ export const useReleases = () => {
     isDeleteReleaseSuccess,
     handShowModalDeleteRelease,
     isShowModalDeleteRelease,
+    onGetReleasesTop100,
   };
 };

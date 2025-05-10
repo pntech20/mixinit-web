@@ -96,7 +96,13 @@ export function ListTracksOwned({ refWidth }: ListTracksOwnedProps) {
       )}
 
       {userDetails?.username && (
-        <Text fontSize="38px" lineHeight="44px" mb="10px" fontWeight="bold">
+        <Text
+          fontSize="38px"
+          lineHeight="44px"
+          mb="10px"
+          fontWeight="bold"
+          color="white"
+        >
           {userDetails?.username}'s Tracks Owned
         </Text>
       )}

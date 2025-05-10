@@ -12,6 +12,7 @@ export function ReleasesAndPagination({
   totalPage,
   isLoading,
   releases,
+  isShowPagination = true,
 }: any) {
   const { pathname } = useLocation();
 
@@ -56,7 +57,9 @@ export function ReleasesAndPagination({
   return (
     <>
       {renderContent()}
-      <Pagination totalPage={totalPage} setFilter={setFilter} />
+      {isShowPagination && (
+        <Pagination totalPage={totalPage} setFilter={setFilter} />
+      )}
     </>
   );
 }

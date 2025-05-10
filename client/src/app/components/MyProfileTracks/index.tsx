@@ -128,7 +128,13 @@ export function MyProfileTracks({
   return (
     <Box>
       {userDetails?.username && (
-        <Text fontSize="38px" lineHeight="44px" mb="10px" fontWeight="bold">
+        <Text
+          fontSize="38px"
+          lineHeight="44px"
+          mb="10px"
+          fontWeight="bold"
+          color={'white'}
+        >
           {userDetails?.username}'s Tracks
         </Text>
       )}
@@ -139,11 +145,7 @@ export function MyProfileTracks({
         direction={{ base: 'column', md: 'row' }}
       >
         <Box w={{ base: '100%', md: 'unset' }}>
-          <Text
-            fontSize="12px"
-            fontWeight="600"
-            color={useColorModeValue('#616161', '#fff')}
-          >
+          <Text fontSize="12px" fontWeight="600" color={'white'}>
             Label:
           </Text>
           <DropDown
@@ -158,6 +160,7 @@ export function MyProfileTracks({
                 )}?tab=1&label=${value}`,
               );
             }}
+            color={'white'}
           />
         </Box>
         <SearchAndSort

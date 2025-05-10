@@ -70,7 +70,7 @@ export function AboutProfile({ userDetails }: any) {
 
   return (
     <Box>
-      <Text className="username" mb="10px">
+      <Text className="username" mb="10px" color="white">
         {userDetails?.username}
       </Text>
       <Flex gridGap="8px" mb="20px">
@@ -95,6 +95,7 @@ export function AboutProfile({ userDetails }: any) {
                     width="25px"
                     height="25px"
                     src={i.icon}
+                    color="white"
                   />
                 </a>
               ),
@@ -105,7 +106,7 @@ export function AboutProfile({ userDetails }: any) {
           <Text color="#8b8b8b" fontSize="12px" lineHeight="15px">
             Hometown:
           </Text>
-          <Text fontSize="20px" fontWeight={700} mb="10px">
+          <Text fontSize="20px" fontWeight={700} mb="10px" color="white">
             {userDetails?.hometown}
           </Text>
         </>
@@ -116,7 +117,7 @@ export function AboutProfile({ userDetails }: any) {
           <Text color="#8b8b8b" fontSize="12px" lineHeight="15px">
             Current Location:
           </Text>
-          <Text fontSize="20px" fontWeight={700} mb="10px">
+          <Text fontSize="20px" fontWeight={700} mb="10px" color="white">
             {userDetails?.currentLocation}
           </Text>
         </>
@@ -130,13 +131,14 @@ export function AboutProfile({ userDetails }: any) {
           <Text
             className="biography"
             dangerouslySetInnerHTML={{ __html: userDetails?.biography }}
+            color="white"
           />
         </>
       )}
 
-      <Box mt="20px">
+      {/* <Box mt="20px">
         {userDetails?._id && <TopTracks contributorId={userDetails?._id} />}
-      </Box>
+      </Box> */}
     </Box>
   );
 }

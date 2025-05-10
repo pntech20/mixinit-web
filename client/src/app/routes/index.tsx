@@ -31,6 +31,7 @@ import { ContributorAdminPage } from 'app/pages/ContributorAdmin';
 import { CompleteOrder } from 'app/pages/CompleteOrder';
 import { CompleteSubscription } from 'app/pages/CompleteSubscription';
 import { AdsPage } from 'app/pages/Ads';
+import { Top100Page } from 'app/pages/Top100';
 // import { HowToGuidesPage } from 'app/pages/HowToGuides/Loadable';
 
 export const CONTRIBUTOR_ROUTES = [
@@ -93,13 +94,13 @@ export const GENERAL_ROUTES = [
     layout: GeneralLayout,
     component: WelcomePage,
   },
-  // {
-  //   path: '/welcome',
-  //   name: 'Welcome',
-  //   exact: true,
-  //   layout: GeneralLayout,
-  //   component: WelcomePage,
-  // },
+  {
+    path: '/top-100',
+    name: 'Top 100',
+    exact: true,
+    layout: GeneralLayout,
+    component: Top100Page,
+  },
   {
     path: '/charts',
     name: 'Charts',

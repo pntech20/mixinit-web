@@ -242,11 +242,12 @@ export default function CartButton({
           </Flex>
         ) : isAddedTracksOrRelease &&
           addedTrackIdOrReleaseId === (track?._id || release?._id) ? (
-          <Spinner size="sm" color={!isDarkMode ? '#000' : '#fff'} />
+          <Spinner size="sm" color={'#fff'} />
         ) : (
           <Button
             variant="unstyled"
             cursor="pointer"
+            h="20px"
             onClick={() => {
               if (!isRelease) {
                 if (!track?.isBelongMyWishlist) {
@@ -367,36 +368,27 @@ export default function CartButton({
                 }
                 alignItems="center"
                 padding="4px 5px"
-                h={isRelease ? (isReleaseDetail ? '30px' : '26px') : '30px'}
+                h={isRelease ? (isReleaseDetail ? '20px' : '20px') : '20px'}
               >
                 {track?.isBelongMyWishlist || release?.isBelongMyWishlist ? (
                   <Box>
-                    <IoIosCheckmarkCircleOutline
-                      size="21.4px"
-                      color={!isDarkMode ? '#000' : '#fff'}
-                    />
+                    <IoIosCheckmarkCircleOutline size="21.4px" color={'#fff'} />
                   </Box>
                 ) : (
                   <Text
                     fontSize="12px"
                     fontWeight={700}
                     textAlign="end"
-                    color={!isDarkMode ? '#000' : '#fff'}
+                    color={'#fff'}
                   >
                     ${track?.price?.toFixed(2) || release?.price?.toFixed(2)}
                   </Text>
                 )}
                 <Box mb="2px">
                   {track?.isBelongMyWishlist || release?.isBelongMyWishlist ? (
-                    <BsFillCartDashFill
-                      size="18px"
-                      color={!isDarkMode ? '#000' : '#fff'}
-                    />
+                    <BsFillCartDashFill size="18px" color={'#fff'} />
                   ) : (
-                    <BsCartPlusFill
-                      size="18px"
-                      color={!isDarkMode ? '#000' : '#fff'}
-                    />
+                    <BsCartPlusFill size="18px" color={'#fff'} />
                   )}
                 </Box>
               </Flex>

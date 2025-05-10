@@ -10,10 +10,10 @@ import { ReleasesAndPagination } from '../ReleasesAndPagination';
 
 interface Props {
   releases: Array<Release>;
-  inMyMedia?: boolean;
+  isTop100?: boolean;
 }
 
-const ReleaseList = ({ releases = [], inMyMedia = false }: Props) => {
+const ReleaseList = ({ releases = [], isTop100 = false }: Props) => {
   const ref = useRef<any>(null);
   const { search } = useLocation();
 
@@ -26,6 +26,7 @@ const ReleaseList = ({ releases = [], inMyMedia = false }: Props) => {
     setSearchValue,
     totalPage,
     isLoading,
+    onGetReleasesTop100,
   } = useReleases();
 
   const location: any = useLocation();
@@ -58,8 +59,12 @@ const ReleaseList = ({ releases = [], inMyMedia = false }: Props) => {
   }, [location.state, search, setFilter, setSearchValue]);
 
   useEffect(() => {
-    onGetReleases();
-  }, [onGetReleases, isLoadingRelease]);
+    if (isTop100) {
+      onGetReleasesTop100();
+    } else {
+      onGetReleases();
+    }
+  }, [onGetReleases, isLoadingRelease, isTop100, onGetReleasesTop100]);
 
   useEffect(() => {
     if (location.state?.dateRange) {
@@ -110,6 +115,7 @@ const ReleaseList = ({ releases = [], inMyMedia = false }: Props) => {
           currentPage={currentPage}
           totalPage={totalPage}
           isLoading={isLoading}
+          isShowPagination={!isTop100}
         />
       </Box>
     </>

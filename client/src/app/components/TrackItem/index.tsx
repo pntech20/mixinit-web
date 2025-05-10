@@ -374,6 +374,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
               });
             }}
             fontSize="20px"
+            color={'white'}
           />
           <AlertDialog
             isOpen={isOpen}
@@ -423,13 +424,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
     <>
       <Box
         position="relative"
-        backgroundColor={
-          index % 2 !== 0
-            ? 'hsla(204.07185628742513, 69.87%, 53.14%, 0.18)'
-            : isDarkMode
-            ? '#5a5a5a'
-            : '#f7f7f7'
-        }
+        backgroundColor={'hsla(204.07185628742513, 69.87%, 53.14%, 0.18)'}
         id={`track_${_id}`}
         className={styles.containerTrackItem}
       >
@@ -453,6 +448,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                 width={{ base: '32px', md: '55px' }}
                 className={styles.numberIndex}
                 mr={{ md: '5px' }}
+                color={'white'}
               >
                 {NumberIndex(
                   index,
@@ -524,12 +520,12 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                       />
                     </Flex>
                   )}
-                  <Text className={styles.createdTrack}>
+                  <Text className={styles.createdTrack} color={'white'}>
                     {formatDate(publishDate || createdAt)}
                   </Text>
                   <Box>
                     <Text
-                      color={type === TRACK_TYPE.AUDIO ? '#fff' : '#000'}
+                      color={'#fff'}
                       backgroundColor={
                         type === TRACK_TYPE.AUDIO ? '#002fff' : '#ffbf00'
                       }
@@ -548,7 +544,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                   >
                     <Text
                       fontWeight={600}
-                      textColor={isDarkMode ? '#ffffff' : '#000'}
+                      textColor={'#000'}
                       fontSize="10px"
                       p="0 2px"
                     >
@@ -556,7 +552,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                       {bpmEndShow}
                     </Text>
                     <Text
-                      textColor={isDarkMode ? '#ea3636' : '#000'}
+                      textColor={'#000'}
                       fontSize="10px"
                       fontWeight={600}
                       p="0 2px"
@@ -576,6 +572,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                   className={styles.titleTrack}
                   fontSize={{ base: '13px', md: '14px' }}
                   w={{ base: '220px', md: '100%' }}
+                  color={'white'}
                 >
                   {formatTitle(title)}
                 </Text>
@@ -644,7 +641,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                       }}
                     >
                       {!track?.favoriteByMe ? (
-                        <IoMdHeartEmpty size={22} />
+                        <IoMdHeartEmpty size={22} color={'white'} />
                       ) : (
                         <Box fontSize={18}>❤️</Box>
                       )}
@@ -655,7 +652,7 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                       hasArrow
                       label={'Number of likes'}
                       bg="gray.300"
-                      color="black"
+                      color="white"
                     >
                       <Text cursor={'pointer'} fontWeight={600}>
                         {favoritedBy}
@@ -678,9 +675,9 @@ const TrackItem = forwardRef((props: TrackItemProps) => {
                   ml="4px"
                 >
                   {isExpand ? (
-                    <BsFillEyeSlashFill fontSize="20px" />
+                    <BsFillEyeSlashFill fontSize="20px" color={'white'} />
                   ) : (
-                    <IoEyeSharp fontSize="20px" />
+                    <IoEyeSharp fontSize="20px" color={'white'} />
                   )}
                 </Box>
               </Tooltip>

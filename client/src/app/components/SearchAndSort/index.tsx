@@ -35,8 +35,8 @@ export default function SearchAndSort({
   isMultipacks?: boolean;
 }) {
   const { t } = useTranslation();
-  const bgSubFilter = useColorModeValue('#fff', '#1A1F2C');
-  const labelFilter = useColorModeValue('#616161', '#fff');
+  const bgSubFilter = '#000';
+  const labelFilter = '#fff';
   const { isLargerThan600 } = useMediaScreen();
   const widthDropDown = useBreakpointValue({
     base: '100%',
@@ -90,13 +90,9 @@ export default function SearchAndSort({
       flexWrap={{ base: 'wrap', md: 'unset' }}
       w="100%"
     >
-      <Flex gridGap="12px" alignItems="center">
+      <Flex gridGap="12px" alignItems="center" color={'white'}>
         <Box w={{ base: '100%', md: 'unset' }}>
-          <Text
-            fontSize="12px"
-            fontWeight="600"
-            color={useColorModeValue('#616161', '#fff')}
-          >
+          <Text fontSize="12px" fontWeight="600" color={'white'}>
             Sort by:
           </Text>
           <DropDown
